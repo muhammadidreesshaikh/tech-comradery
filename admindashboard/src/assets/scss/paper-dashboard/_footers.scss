@@ -1,5 +1,6 @@
 .footer{
     padding: 24px 0;
+    background-color: #767676;
 
     &.footer-default{
         background-color: #f2f2f2;
@@ -20,7 +21,7 @@
             display: inline-block;
 
             a{
-                color: inherit;
+                color: white;
                 padding: $padding-base-vertical;
                 font-size: $font-size-small;
                 text-transform: uppercase;
@@ -36,6 +37,7 @@
     .copyright{
         font-size: $font-size-small;
         line-height: 1.8;
+        color: white;
     }
 
     &:after{
