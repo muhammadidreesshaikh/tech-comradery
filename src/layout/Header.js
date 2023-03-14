@@ -34,7 +34,7 @@ function Header() {
                                     </div>
 
                                     <li><Link to="/enterprise">Enterprise</Link></li>
-                                    <li><Link to="/why-commradery">Why Commradery</Link></li>
+                                    <li><Link to="/why-commradery">Why Comradery</Link></li>
                                 </ul>
                             </div>
                         </div>
