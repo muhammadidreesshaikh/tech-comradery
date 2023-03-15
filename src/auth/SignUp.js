@@ -33,7 +33,7 @@ function SignUp() {
                                         />
                                     </div>
 
-                                    <div className="form-group">
+                                    <div className="form-group pt-3">
                                         <label>Email</label>
                                         <input
                                             type="email"
@@ -42,7 +42,7 @@ function SignUp() {
                                         />
                                     </div>
 
-                                    <div className="form-group">
+                                    <div className="form-group pt-3">
                                         <label>Password</label>
                                         <input
                                             type="password"
@@ -51,7 +51,7 @@ function SignUp() {
                                         />
                                     </div>
 
-                                    <div className="form-group">
+                                    <div className="form-group pt-3">
                                         <label>Confirm Password</label>
                                         <input
                                             type="password"
@@ -60,7 +60,7 @@ function SignUp() {
                                         />
                                     </div>
 
-                                    <div className="row forgot-checkout">
+                                    {/* <div className="row forgot-checkout">
                                         <div className="col-6">
                                             <div className="form-group checkout form-check">
                                                 <input
@@ -72,6 +72,22 @@ function SignUp() {
                                                 </label>
                                             </div>
                                         </div>
+                                    </div> */}
+
+                                    <div className="row read-checkout mt-4">
+                                        <div className="col-7">
+                                            <div className="form-group checkout form-check">
+                                                <input
+                                                    type="checkbox"
+                                                    class="form-check-input"
+                                                />
+                                                <label className="form-check-label">
+                                                    I've read and agree with Terms of Services and our Privacy Policy.
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div className="col-5"></div>
                                     </div>
 
                                     <div className="signup-btn mt-5">
