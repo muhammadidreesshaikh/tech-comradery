@@ -8,7 +8,7 @@ function Footer() {
                 <div className="container">
                     <div className="row">
 
-                        <div className="col-3">
+                        <div className="col-12 col-md-6 col-lg-3">
                             <div className="first">
                                 <h3>Company Info</h3>
                                 <ul>
@@ -21,7 +21,7 @@ function Footer() {
                             </div>
                         </div>
 
-                        <div className="col-3">
+                        <div className="col-12 col-md-6 col-lg-3">
                             <div className="first">
                                 <h3>Need Help</h3>
                                 <ul>
@@ -34,7 +34,7 @@ function Footer() {
                             </div>
                         </div>
 
-                        <div className="col-3">
+                        <div className="col-12 col-md-6 col-lg-3">
                             <div className="first">
                                 <h3>Company Info</h3>
                                 <ul>
@@ -47,13 +47,13 @@ function Footer() {
                             </div>
                         </div>
 
-                        <div className="col-3">
+                        <div className="col-12 col-md-6 col-lg-3">
                             <div className="first">
                                 <h3>STAY CONNECTED</h3>
                                 <ul>
                                     <li><a href='#'><i class="fa-solid fa-phone"></i> +1 617-237-0817 </a></li>
                                     <li><a href='#'><i class="fa-solid fa-envelope"></i> Discovery@TechComradery.com </a></li>
-                                    <li><a href='#'><i class="fa-solid fa-location-dot"></i> 177 Huntington Ave Ste 1703 PMB 67562 <br/>Boston, Massachusetts </a></li>
+                                    <li><a href='#'><i class="fa-solid fa-location-dot"></i> 177 Huntington Ave Ste 1703 PMB 67562 <br />Boston, Massachusetts </a></li>
                                 </ul>
                             </div>
                         </div>
