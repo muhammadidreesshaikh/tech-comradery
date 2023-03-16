@@ -21,12 +21,17 @@
                 a {
                     cursor: pointer;
                     color: var(--color-white);
-                    font-size: 16px;
+                    font-size: 17px;
 
                     &:hover {
                         color: var(--color-green);
                         opacity: 0.5s;
                         transition: 0.5s;
+                    }
+
+                    i {
+                        padding-right: 10px;
+                        font-size: 16px;
                     }
                 }
             }
@@ -51,8 +56,16 @@
     }
 
     .right {
+        float: right;
         a {
             i {
+                border: 1px solid;
+                color: var(--color-white);
+                border-radius: 30px;
+                padding: 6px;
+                font-size: 18px;
+                margin: 0 6px;
+
                 &:hover {
                     color: var(--color-green);
                     opacity: 0.5s;

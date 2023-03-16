@@ -18,7 +18,7 @@ function Header() {
                     <div className="bar3"></div>
                 </div>
 
-                <div className="container">
+                <div className="desktop-menu container">
                     <div className="row">
 
                         <div className="col-2">

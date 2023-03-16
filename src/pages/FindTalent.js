@@ -220,24 +220,24 @@ function FindTalent() {
           <div className="row justify-content-center">
 
             <div class="tab row">
-              <div className="col-3">
+              <div className="col-3 px-0">
                 <a className="tablinks" onClick={() => setTab(1)}>Top Skills</a>
-                <div className="seprator"></div>
+                <div className={"seprator " + ((tab == 1) ? "active": "")}></div>
               </div>
 
-              <div className="col-3">
+              <div className="col-3 px-0">
                 <a className="tablinks" onClick={() => setTab(2)}>Trending Skills</a>
-                <div className="seprator"></div>
+                <div className={"seprator " + ((tab == 2) ? "active": "")}></div>
               </div>
 
-              <div className="col-3">
+              <div className="col-3 px-0">
                 <a className="tablinks" onClick={() => setTab(3)}>Top Skills in US</a>
-                <div className="seprator"></div>
+                <div className={"seprator " + ((tab == 3) ? "active": "")}></div>
               </div>
 
-              <div className="col-3">
+              <div className="col-3 px-0">
                 <a className="tablinks" onClick={() => setTab(4)}>Project Catalog</a>
-                <div className="seprator"></div>
+                <div className={"seprator " + ((tab == 4) ? "active": "")}></div>
               </div>
             </div>
 

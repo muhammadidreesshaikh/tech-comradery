@@ -51,9 +51,9 @@ function Footer() {
                             <div className="first">
                                 <h3>STAY CONNECTED</h3>
                                 <ul>
-                                    <li><a href='#'>+1 617-237-0817 <i class="fa-solid fa-phone"></i></a></li>
-                                    <li><a href='#'>Discovery@TechComradery.com <i class="fa-solid fa-envelope"></i></a></li>
-                                    <li> <a href='#'>177 Huntington Ave Ste 1703 PMB 67562 <br/>Boston, Massachusetts <i class="fa-solid fa-location-dot"></i></a></li>
+                                    <li><a href='#'><i class="fa-solid fa-phone"></i> +1 617-237-0817 </a></li>
+                                    <li><a href='#'><i class="fa-solid fa-envelope"></i> Discovery@TechComradery.com </a></li>
+                                    <li><a href='#'><i class="fa-solid fa-location-dot"></i> 177 Huntington Ave Ste 1703 PMB 67562 <br/>Boston, Massachusetts </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -67,13 +67,13 @@ function Footer() {
                 <div className="container">
                     <div className="row">
 
-                        <div className="col-9">
+                        <div className="col-10">
                             <div className="left">
                                 <p>© Copyright 2023, Tech Comradery. All Rights Reserved.</p>
                             </div>
                         </div>
 
-                        <div className="col-3">
+                        <div className="col-2">
                             <div className="right">
                                 <a href='#'><i class="fa-brands fa-youtube"></i></a>
                                 <a href='#'><i class="fa-brands fa-facebook"></i></a>
