@@ -13,13 +13,13 @@ function FindTalent() {
       <div className="find-talent">
         <div className="container">
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-12 col-md-5 col-lg-4">
               <div className="img-work">
                 <span className="verticaltxt">Expert</span>
                 <img src={require('./../assets/img/img-work.jpg')} />
               </div>
             </div>
-            <div className="col-md-8 work_cntnt">
+            <div className="col-12 col-md-7 col-lg-8 work_cntnt">
               <h1 className="main_hdng">Up your work game, <span className="primary-color">it’s free.</span></h1>
               <p className="">
                 <span className="primary-color">No cost to join.</span><br />
