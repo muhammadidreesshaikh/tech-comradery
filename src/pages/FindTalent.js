@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Slider from "../shared/Slider";
 import "../assets/scss/find-talent.scss";
+import ChatMaster from "../shared/ChatMaster";
 
 function FindTalent() {
 
@@ -504,6 +505,10 @@ function FindTalent() {
           </div>
         </div>
       </section>
+
+      {/* <div className="chat-btn">
+        <ChatMaster />
+      </div> */}
 
     </div>
   );

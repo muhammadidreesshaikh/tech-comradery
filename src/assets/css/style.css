@@ -40,7 +40,8 @@ span.primary-color {
 }
 
 .find-talent p {
-    margin-top: 14px !important;
+    /* margin-top: 14px !important; */
+    padding-top: 15px;
     font-weight: 400;
     font-size: 22px;
     color: var(--color-black);
@@ -339,17 +340,84 @@ ul.ul_company li {
 
 /* menu desktop and mobile switching on responsive  */
 @media only screen and (max-width: 768px) {
-    .dummy {}
+    h1.main_hdng {
+        font-size: 28px;
+    }
+
+    .img-work {
+        width: calc(80% - 15px);
+        height: calc(75% - 15px);
+    }
+
+    .img-work .verticaltxt {
+        font-size: 80px;
+        top: 40%;
+        left: -150px;
+    }
+
+    .work_cntnt {
+        padding-top: 0px;
+        padding-left: 30px !important;
+    }
+
+    .find-talent p {
+        padding-top: 20px;
+        font-size: 18px;
+    }
+
+    .find-talent p span.primary-color {
+        font-size: 23px;
+    }
+
+    .find-talent .btn {
+        margin-top: 40px;
+        margin-right: 10px;
+    }
+
+    .btn.btn-cstm {
+        padding: 11px 18px;
+        font-size: 19px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-    .find-talent .img-work {
-        width: calc(100% - 25%);
+    h1.main_hdng {
+        font-size: 45px;
+        font-weight: 900;
+        padding-bottom: 20px;
     }
 
-    .find-talent .img-work .verticaltxt {
-        font-size: 85px;
-        top: 35%;
-        left: -154px;
+    .img-work {
+        width: calc(85% - 15px);
+        height: calc(95% - 15px);
+    }
+
+    .img-work .verticaltxt {
+        font-size: 76px;
+        top: 43%;
+        left: -142px;
+    }
+
+    .work_cntnt {
+        padding-top: 35px;
+        padding-left: 30px !important;
+    }
+
+    .find-talent p {
+        padding-top: 20px;
+        font-size: 18px;
+    }
+
+    .find-talent p span.primary-color {
+        font-size: 20px;
+    }
+
+    .btn.btn-cstm {
+        padding: 11px 17px;
+        font-size: 17px;
+    }
+
+    .bx-category h4{
+        font-size: 24px;
     }
 }
