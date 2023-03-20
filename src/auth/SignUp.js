@@ -1,12 +1,37 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+//import React from 'react';
+import FacebookLogin from 'react-facebook-login';
+import GoogleLogin from 'react-google-login';
 import { Link } from 'react-router-dom';
 import '../assets/scss/sign-up.scss';
+import { gapi } from 'gapi-script';
 
 // image
 import image from "../assets/img/unnamed.png";
 import image1 from "../assets/img/download.png";
 
 function SignUp() {
+
+    const responseFacebook = (response) => {
+        console.log(response);
+        const { first_name, last_name, short_name, email } = response;
+        const message = `First Name: ${first_name}\nLast Name: ${last_name}\nShort Name: ${short_name}\nEmail: ${email}`;
+        alert(message);
+    }
+    const clientId = '5042000475458-th4erlj9340rlvs1afsm3s3rsms2cclk.apps.googleusercontent.com';
+
+    const responseGoogle = (response) => {
+        console.log(response);
+        const { name, email } = response.profileObj;
+        const message = `Name: ${name}\nEmail: ${email}`;
+        alert(message);
+    }
+    useEffect(() => {
+        gapi.load('client:auth2', () => {
+            gapi.auth2.init({ clientId: clientId });
+        });
+    }, []);
+
     return (
         <div>
             <div className="sign-up">
@@ -19,8 +44,29 @@ function SignUp() {
                                 <p>Inspirational designs, illustrations, and graphic elements from the world’s best designers. Want more inspiration? Browse our</p>
 
                                 <div className="social-btns mt-5">
-                                    <a href='https://support.google.com' className="green w-100 mt-3"><img src={image} /> Sign in with Google</a>
-                                    <a href='https://www.facebook.com/login/' className="white w-100 mt-3"><img src={image1} /> Sign in with Facebook</a>
+                                    <a>
+                                        <GoogleLogin
+                                            clientId={clientId}
+                                            buttonText="SIGN IN WITH GOOGLE"
+                                            onSuccess={responseGoogle}
+                                            onFailure={responseGoogle}
+                                            cookiePolicy={'single_host_origin'}
+                                        />
+                                    </a>
+
+                                    <a>
+                                        <FacebookLogin
+                                            appId="1680006525637957"
+                                            autoLoad={false}
+                                            fields="first_name,last_name,short_name,email,picture"
+                                            callback={responseFacebook}
+                                            render={renderProps => (
+                                                <button onClick={renderProps.onClick} className="white w-100 mt-3"><img src={image1} /> Sign in with Facebook</button>
+                                            )}
+                                            icon={<i className="fab fa-facebook"></i>}
+                                            textButton="Sign in with Facebook"
+                                        />
+                                    </a>
                                 </div>
 
                                 <form className="mt-5">
@@ -85,6 +131,7 @@ function SignUp() {
                                                     I've read and agree with Terms of Services and our Privacy Policy.
                                                 </label>
                                             </div>
+
                                         </div>
 
                                         <div className="col-5"></div>
@@ -102,13 +149,10 @@ function SignUp() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </div>
     );
 }
-
 export default SignUp;
