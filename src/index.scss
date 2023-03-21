@@ -1,18 +1,24 @@
 :root {
-  --color-black: #020202;
+  --color-black: #000000;
   --color-gry: #757575;
-  --color-white: #ffff;
-  --color-green: #14a800;
+  --color-light-gry: #F1F2F2;
+  --color-white: #ffffff;
+  --color-green: #77BA02;
 }
 
-body
-{
+body {
   font-family: 'Roboto', sans-serif !important;
   overflow-x: hidden;
   margin-bottom: 0 auto;
 }
 
-p, h1 ,h2 ,h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0 !important;
 }
 
@@ -23,43 +29,47 @@ p, h1 ,h2 ,h3, h4, h5, h6 {
   transform: translate(-50%, -50%);
 }
 
-a{
+a {
   text-decoration: none !important;
 }
 
 /* button */
-.green{
+.green {
   border: 1px solid var(--color-green);
   border-radius: 5px;
-  padding: 8px 15px;
-  font-size: 15px;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
   background-color: var(--color-green);
   color: var(--color-white);
   text-align: center;
   transition: 0.5s;
   cursor: pointer;
-  &:hover{
+
+  &:hover {
     opacity: 0.5s;
     transition: 0.5s;
-    color:  var(--color-green);
+    color: var(--color-green);
     background-color: var(--color-white);
   }
 }
 
-.white{
-  border: 1px solid var(--color-white);
+.white {
+  border: 1px solid var(--color-green);
   border-radius: 5px;
-  padding: 8px 15px;
-  font-size: 15px;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
   background-color: var(--color-white);
   color: var(--color-green);
   text-align: center;
   transition: 0.5s;
   cursor: pointer;
-  &:hover{
+
+  &:hover {
     opacity: 0.5s;
     transition: 0.5s;
-    color:  var(--color-white);
+    color: var(--color-white);
     background-color: var(--color-green);
   }
 }
@@ -67,15 +77,11 @@ a{
 
 /* menu desktop and mobile switching on responsive  */
 @media only screen and (max-width: 768px) {
-  .dummy {
-     
-  }
+  .dummy {}
 }
 
 @media only screen and (max-width: 600px) {
-  .dummy {
-     
-  }
+  .dummy {}
 }
 
 // .chat-btn {

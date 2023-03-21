@@ -18,7 +18,7 @@ function SignUp() {
         const message = `First Name: ${first_name}\nLast Name: ${last_name}\nShort Name: ${short_name}\nEmail: ${email}`;
         alert(message);
     }
-    const clientId = '5042000475458-th4erlj9340rlvs1afsm3s3rsms2cclk.apps.googleusercontent.com';
+    const clientId = '1234504266475458-th4erlj9340rlvs1afsm3s3rsms2cclk.apps.googleusercontent.com';
 
     const responseGoogle = (response) => {
         console.log(response);
@@ -56,7 +56,7 @@ function SignUp() {
 
                                     <a>
                                         <FacebookLogin
-                                            appId="1680006525637957"
+                                            appId="12341681326525637957"
                                             autoLoad={false}
                                             fields="first_name,last_name,short_name,email,picture"
                                             callback={responseFacebook}

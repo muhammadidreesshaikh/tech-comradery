@@ -3,13 +3,16 @@
     padding: 25px 0;
     width: 100%;
     height: 15vh;
+    position: relative;
 
     .logo {
         img {
-            width: 90%;
+            width: 10%;
             height: auto;
             object-fit: cover;
             object-position: center;
+            position: absolute;
+            top: -8px;
         }
     }
 
@@ -26,7 +29,7 @@
 
         li {
             a {
-                padding: 0 24px;
+                padding: 0 22px;
                 font-size: 19px;
                 font-weight: 600;
                 color: var(--color-black);
@@ -113,9 +116,16 @@
     .nav-buttons {
         margin-top: 25px;
 
+        .green {
+            padding: 10px 25px;
+            font-size: 17px;
+        }
+
         .white {
             border: 1px solid var(--color-green);
-            margin-right: 15px;
+            margin-right: 10px;
+            padding: 10px 25px;
+            font-size: 17px;
         }
     }
 }
@@ -238,17 +248,19 @@
         height: 12vh;
         padding: 20px 0;
 
-        .logo{
-            img{
+        .logo {
+            img {
                 width: 160px;
             }
         }
 
-        .nav, .nav-btn-search, .nav-buttons {
+        .nav,
+        .nav-btn-search,
+        .nav-buttons {
             display: none;
         }
 
-        .mobile-menu-toggle{
+        .mobile-menu-toggle {
             top: 25px;
         }
     }
@@ -257,9 +269,10 @@
 @media only screen and (max-width: 600px) {
     .header {
         height: 10vh;
-        .logo{
-            img{
-                width: 150px;
+
+        .logo {
+            img {
+                width: 140px;
             }
         }
     }

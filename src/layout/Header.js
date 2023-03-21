@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import '../assets/scss/header.scss';
 
-import logo from '../assets/img/logo1.png'
+import logo from '../assets/img/TC_Logo_black_bg.png'
 
 function Header() {
 
@@ -22,14 +22,14 @@ function Header() {
                     <div className="col-12">
 
                         <div className='row'>
-                            <div className="col-2">
+                            <div className="col-3">
                                 <div className='logo'>
                                     {/* <Link to="/find-talent">Tech Comradery</Link> */}
                                     <a href='/find-talent'><img src={logo} /></a>
                                 </div>
                             </div>
 
-                            <div className="col-12 col-md-6 col-lg-6">
+                            <div className="col-12 col-md-6 col-lg-5">
                                 <div className="nav">
                                     <ul>
                                         <li><Link to="/find-talent">Find Talent</Link></li>

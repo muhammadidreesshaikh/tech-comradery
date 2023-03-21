@@ -21,22 +21,24 @@ function FindTalent() {
               </div>
             </div>
             <div className="col-12 col-md-7 col-lg-8 work_cntnt">
-              <h1 className="main_hdng">Up your work game, <span className="primary-color">it’s free.</span></h1>
-              <p className="">
+              <h1>Up your work game, <span className="primary-color">it’s free.</span></h1>
+              <p>
                 <span className="primary-color">No cost to join.</span><br />
                 Register and browse professionals, explore projects, or even book a consultation.
               </p>
-              <p className="">
+              <p>
                 <span className="primary-color">Post a job and hire top talent.</span><br />
                 Finding talent doesn’t have to be a chore. Post a job or we can search for you!
               </p>
-              <p className="">
+              <p>
                 <span className="primary-color">Work with the best—without breaking the bank.</span><br />
                 Tech Comradery makes it affordable to up your work and take advantage of low transaction rates.
               </p>
 
-              <button className="btn btn-cstm green">Sign up for free</button>
-              <button className="btn btn-cstm white">Learn how to hire</button>
+              <div className="find-btns">
+                <button className="green">Sign up for free</button>
+                <button className="white">Learn how to hire</button>
+              </div>
             </div>
 
           </div>
@@ -45,81 +47,85 @@ function FindTalent() {
 
       <section className="sec-category">
         <div className="container">
-          <h1 className="main_hdng text-center"><span className="normal">Browse talent by</span> Category</h1>
-          <h5 className="hdng_title text-center">Looking for work? <span className="color-primary">Browse jobs</span></h5>
-          <div className="row cate_row">
-            <div className="col col-lg-3 col-md-6">
-              <div className="bx-category">
-                <h4>Development & IT</h4>
-                <div className="row">
-                  <div className="col-6">4.85/5</div>
-                  <div className="col-6 text-end">1853 skills</div>
+          <div className="row">
+
+            <h1>Browse talent by <span>Category</span></h1>
+            <h5 className="hdng_title text-center">Looking for work? <span className="color-primary">Browse jobs</span></h5>
+            <div className="row cate_row">
+              <div className="col col-lg-3 col-md-6">
+                <div className="bx-category">
+                  <h4>Development & IT</h4>
+                  <div className="row">
+                    <div className="col-6">4.85/5</div>
+                    <div className="col-6 text-end">1853 skills</div>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-lg-3 col-md-6">
+                <div className="bx-category">
+                  <h4>Design & Creative</h4>
+                  <div className="row">
+                    <div className="col-6">4.85/5</div>
+                    <div className="col-6 text-end">1853 skills</div>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-lg-3 col-md-6">
+                <div className="bx-category">
+                  <h4>Sales & Marketing</h4>
+                  <div className="row">
+                    <div className="col-6">4.85/5</div>
+                    <div className="col-6 text-end">1853 skills</div>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-lg-3 col-md-6">
+                <div className="bx-category">
+                  <h4>Writing & Translation</h4>
+                  <div className="row">
+                    <div className="col-6">4.85/5</div>
+                    <div className="col-6 text-end">1853 skills</div>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-lg-3 col-md-6">
+                <div className="bx-category">
+                  <h4>Admin & Customer Support</h4>
+                  <div className="row">
+                    <div className="col-6">4.85/5</div>
+                    <div className="col-6 text-end">1853 skills</div>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-lg-3 col-md-6">
+                <div className="bx-category">
+                  <h4>Finance & Accounting</h4>
+                  <div className="row">
+                    <div className="col-6">4.85/5</div>
+                    <div className="col-6 text-end">1853 skills</div>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-lg-3 col-md-6">
+                <div className="bx-category">
+                  <h4>Engineering & Architecture</h4>
+                  <div className="row">
+                    <div className="col-6">4.85/5</div>
+                    <div className="col-6 text-end">1853 skills</div>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-lg-3 col-md-6">
+                <div className="bx-category">
+                  <h4>Legal</h4>
+                  <div className="row">
+                    <div className="col-6">4.85/5</div>
+                    <div className="col-6 text-end">1853 skills</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="col col-lg-3 col-md-6">
-              <div className="bx-category">
-                <h4>Design & Creative</h4>
-                <div className="row">
-                  <div className="col-6">4.85/5</div>
-                  <div className="col-6 text-end">1853 skills</div>
-                </div>
-              </div>
-            </div>
-            <div className="col col-lg-3 col-md-6">
-              <div className="bx-category">
-                <h4>Sales & Marketing</h4>
-                <div className="row">
-                  <div className="col-6">4.85/5</div>
-                  <div className="col-6 text-end">1853 skills</div>
-                </div>
-              </div>
-            </div>
-            <div className="col col-lg-3 col-md-6">
-              <div className="bx-category">
-                <h4>Writing & Translation</h4>
-                <div className="row">
-                  <div className="col-6">4.85/5</div>
-                  <div className="col-6 text-end">1853 skills</div>
-                </div>
-              </div>
-            </div>
-            <div className="col col-lg-3 col-md-6">
-              <div className="bx-category">
-                <h4>Admin & Customer Support</h4>
-                <div className="row">
-                  <div className="col-6">4.85/5</div>
-                  <div className="col-6 text-end">1853 skills</div>
-                </div>
-              </div>
-            </div>
-            <div className="col col-lg-3 col-md-6">
-              <div className="bx-category">
-                <h4>Finance & Accounting</h4>
-                <div className="row">
-                  <div className="col-6">4.85/5</div>
-                  <div className="col-6 text-end">1853 skills</div>
-                </div>
-              </div>
-            </div>
-            <div className="col col-lg-3 col-md-6">
-              <div className="bx-category">
-                <h4>Engineering & Architecture</h4>
-                <div className="row">
-                  <div className="col-6">4.85/5</div>
-                  <div className="col-6 text-end">1853 skills</div>
-                </div>
-              </div>
-            </div>
-            <div className="col col-lg-3 col-md-6">
-              <div className="bx-category">
-                <h4>Legal</h4>
-                <div className="row">
-                  <div className="col-6">4.85/5</div>
-                  <div className="col-6 text-end">1853 skills</div>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
@@ -223,22 +229,22 @@ function FindTalent() {
             <div class="tab row">
               <div className="col-3 px-0">
                 <a className="tablinks" onClick={() => setTab(1)}>Top Skills</a>
-                <div className={"seprator " + ((tab == 1) ? "active": "")}></div>
+                <div className={"seprator " + ((tab == 1) ? "active" : "")}></div>
               </div>
 
               <div className="col-3 px-0">
                 <a className="tablinks" onClick={() => setTab(2)}>Trending Skills</a>
-                <div className={"seprator " + ((tab == 2) ? "active": "")}></div>
+                <div className={"seprator " + ((tab == 2) ? "active" : "")}></div>
               </div>
 
               <div className="col-3 px-0">
                 <a className="tablinks" onClick={() => setTab(3)}>Top Skills in US</a>
-                <div className={"seprator " + ((tab == 3) ? "active": "")}></div>
+                <div className={"seprator " + ((tab == 3) ? "active" : "")}></div>
               </div>
 
               <div className="col-3 px-0">
                 <a className="tablinks" onClick={() => setTab(4)}>Project Catalog</a>
-                <div className={"seprator " + ((tab == 4) ? "active": "")}></div>
+                <div className={"seprator " + ((tab == 4) ? "active" : "")}></div>
               </div>
             </div>
 
