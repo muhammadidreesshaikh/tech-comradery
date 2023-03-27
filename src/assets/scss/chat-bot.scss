@@ -1,17 +1,77 @@
 .chat-bot {
     // padding: 60px 0;
     background-color: #fbfbfb;
+    position: relative;
 
     .side-bar {
-        background-color: red;
+        background-color: var(--color-black);
         width: 20%;
         height: 85vh;
         position: absolute;
         left: 0px;
 
+        .form-group-custm {
+            input {
+                width: 85%;
+                height: 50px;
+                cursor: pointer;
+                position: absolute;
+                top: 30px;
+                left: 20px;
+                font-size: 19px;
+                // font-weight: 500;
+                padding-left: 50px;
+                background-color: transparent;
+                color: var(--color-light-gry);
+                border: 1px solid var(--color-light-gry);
+                &::placeholder{
+                    color: var(--color-light-gry);
+                }
+            }
+
+            a {
+                position: absolute;
+                left: 30px;
+                top: 42px;
+                color: var(--color-light-gry);;
+                font-size: 17px;
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--color-green);
+                    transition: 0.5s;
+                    opacity: 0.5s;
+                }
+            }
+        }
+
         ul {
+            position: absolute;
+            left: 30px;
+            bottom: 25px;
+            list-style: none;
+            margin-bottom: 0;
+            padding-left: 0;
+
             li {
-                a {}
+                padding-top: 20px;
+
+                a {
+                    color: var(--color-white);
+                    font-size: 19px;
+
+                    i {
+                        color: var(--color-green);
+                        font-size: 17px;
+                        padding-right: 15px;
+                    }
+
+                    &:hover {
+                        color: var(--color-green);
+                        transition: 0.5s;
+                        opacity: 0.5s;
+                    }
+                }
             }
         }
     }
@@ -19,17 +79,18 @@
     .main {
         width: 100%;
         height: 85vh;
+        padding: 50px 0;
 
         h3 {
             text-align: center;
-            font-size: 40px;
-            color: black;
+            font-size: 50px;
+            color: var(--color-black);
             font-weight: 600;
         }
 
         p {
             text-align: center;
-            font-size: 17px;
+            font-size: 16px;
             color: #939393;
             padding: 15px 15px 0 15px;
         }
@@ -38,20 +99,22 @@
 
             input {
                 width: 100%;
-                height: 50px;
+                height: 45px;
                 cursor: pointer;
+                position: absolute;
+                top: 22rem;
             }
 
             a {
                 position: absolute;
-                right: 235px;
-                top: 296px;
+                right: 1.25rem;
+                top: 22.438rem;
+                color: var(--color-black);
                 font-size: 20px;
-                color: black;
                 cursor: pointer;
 
                 &:hover {
-                    color: green;
+                    color: var(--color-green);
                     transition: 0.5s;
                     opacity: 0.5s;
                 }

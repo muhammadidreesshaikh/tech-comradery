@@ -61,6 +61,7 @@ function SignUp() {
                                     />
 
                                     <FacebookLogin
+                                        // href="https://www.facebook.com/TechComrad/"
                                         appId="12341681326525637957"
                                         autoLoad={false}
                                         fields="first_name,last_name,short_name,email,picture"

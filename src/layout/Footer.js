@@ -76,9 +76,9 @@ function Footer() {
                         <div className="col-2">
                             <div className="right">
                                 <a href='#'><i class="fa-brands fa-youtube"></i></a>
-                                <a href='#'><i class="fa-brands fa-facebook"></i></a>
+                                <a href='https://www.facebook.com/TechComrad/'><i class="fa-brands fa-facebook"></i></a>
                                 <a href='#'><i class="fa-brands fa-instagram"></i></a>
-                                <a href='#'><i class="fa-brands fa-linkedin"></i></a>
+                                <a href='https://www.linkedin.com/company/techcomrad/'><i class="fa-brands fa-linkedin"></i></a>
                                 <a href='#'><i class="fa-brands fa-twitter"></i></a>
                             </div>
                         </div>
