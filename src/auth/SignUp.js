@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 //import React from 'react';
 import FacebookLogin from 'react-facebook-login';
 import GoogleLogin from 'react-google-login';
+// import {LinkedInLogin} from 'react-linkedin-login';
+// import LinkedInLogin from 'react-linkedin-login-oauth2';
 import { Link } from 'react-router-dom';
 import '../assets/scss/sign-up.scss';
 import { gapi } from 'gapi-script';
@@ -26,11 +28,16 @@ function SignUp() {
         const message = `Name: ${name}\nEmail: ${email}`;
         alert(message);
     }
+
     useEffect(() => {
         gapi.load('client:auth2', () => {
             gapi.auth2.init({ clientId: clientId });
         });
     }, []);
+
+    const clientIdLinkedin = '77bfyf3fb3h9yg';
+    const handleSuccess = (response) => {console.log(response); }
+    const handleFailure = (error) => {console.log(error); }
 
     return (
         <div>
@@ -38,35 +45,59 @@ function SignUp() {
                 <div className="container">
                     <div className="row justify-content-center">
 
-                        <div className='col-5'>
+                        <div className='col-7'>
                             <div className='inner'>
                                 <h3>Sign Up</h3>
                                 <p>Inspirational designs, illustrations, and graphic elements from the world’s best designers. Want more inspiration? Browse our</p>
 
                                 <div className="social-btns mt-5">
-                                    <a>
-                                        <GoogleLogin
-                                            clientId={clientId}
-                                            buttonText="SIGN IN WITH GOOGLE"
-                                            onSuccess={responseGoogle}
-                                            onFailure={responseGoogle}
-                                            cookiePolicy={'single_host_origin'}
-                                        />
-                                    </a>
+                                    <GoogleLogin
+                                        className='button-google'
+                                        clientId={clientId}
+                                        buttonText="Sign in with google"
+                                        onSuccess={responseGoogle}
+                                        onFailure={responseGoogle}
+                                        cookiePolicy={'single_host_origin'}
+                                    />
 
-                                    <a>
-                                        <FacebookLogin
-                                            appId="12341681326525637957"
-                                            autoLoad={false}
-                                            fields="first_name,last_name,short_name,email,picture"
-                                            callback={responseFacebook}
-                                            render={renderProps => (
-                                                <button onClick={renderProps.onClick} className="white w-100 mt-3"><img src={image1} /> Sign in with Facebook</button>
-                                            )}
-                                            icon={<i className="fab fa-facebook"></i>}
-                                            textButton="Sign in with Facebook"
-                                        />
-                                    </a>
+                                    <FacebookLogin
+                                        appId="12341681326525637957"
+                                        autoLoad={false}
+                                        fields="first_name,last_name,short_name,email,picture"
+                                        callback={responseFacebook}
+                                        render={renderProps => (
+                                            <button onClick={renderProps.onClick} ><img src={image1} /> Sign in with Facebook</button>
+                                        )}
+                                        icon={<i className="fab fa-facebook"></i>}
+                                        textButton="Sign in with Facebook"
+                                    />
+
+                                    {/* <LinkedInLogin
+                                        className='button-linked'
+                                        clientId="77bfyf3fb3h9yg"
+                                        callbackUrl="http://localhost:3000/sign-up"
+                                        onFailure={handleFailure}
+                                        onSuccess={handleSuccess}
+                                        redirectUri="http://localhost:3000/sign-up"
+                                    /> */}
+
+                                    {/* <LinkedInLogin
+                                        className='button-linked'
+                                        clientId={clientIdLinkedin}
+                                        callbackUrl="http://localhost:3000/sign-up"
+                                        onFailure={handleFailure}
+                                        onSuccess={handleSuccess}
+                                        redirectUri="http://localhost:3000/sign-up"
+                                    /> */}
+
+                                    <GoogleLogin
+                                        className='button-google'
+                                        clientId={clientId}
+                                        buttonText="Sign in with google"
+                                        onSuccess={responseGoogle}
+                                        onFailure={responseGoogle}
+                                        cookiePolicy={'single_host_origin'}
+                                    />
                                 </div>
 
                                 <form className="mt-5">

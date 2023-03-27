@@ -35,7 +35,7 @@ function Header() {
                                         <li><Link to="/find-talent">Find Talent</Link></li>
 
                                         <div className="dropdown">
-                                            <button className="dropbtn">Find Work</button>
+                                            <a className="dropbtn">Find Work</a>
                                             <div className="dropdown-content">
                                                 <Link to="/">Text 1</Link>
                                                 <Link to="/">Text 2</Link>

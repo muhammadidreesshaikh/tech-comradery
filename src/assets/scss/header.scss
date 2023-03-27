@@ -103,13 +103,15 @@
 
         .btn-search {
             border-radius: 0px 6px 6px 0px;
-            padding: 12px 20px;
+            padding: 10px 20px;
             font-size: 14px;
             background-color: var(--color-black);
             color: var(--color-white);
             text-align: center;
             transition: 0.5s;
             cursor: pointer;
+            position: absolute;
+            right: 365px;
         }
     }
 
