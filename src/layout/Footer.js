@@ -8,9 +8,9 @@ function Footer() {
                 <div className="container">
                     <div className="row">
 
-                        <div className='chat-icon'>
+                        {/* <div className='chat-icon'>
                             <a href='/chat-bot'><i class="fa-regular fa-comments"></i></a>
-                        </div>
+                        </div> */}
 
                         <div className="col-12 col-md-6 col-lg-3">
                             <div className="first">
