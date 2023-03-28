@@ -8,8 +8,36 @@ const Chatbot = () => {
     const [messages, setMessages] = useState([]);
     const [inputValue, setInputValue] = useState("");
 
+    // Start Mic Code
 
+    const startSr = () => {
+        if (!("webkitSpeechRecognition" in window)) {
+            alert("Your browser does not support speech recognition.");
+            return;
+        }
 
+        const recognition = new window.webkitSpeechRecognition();
+        recognition.continuous = false;
+        recognition.interimResults = false;
+        recognition.lang = "en-US";
+        recognition.onstart = () => {
+            console.log("Speech recognition started");
+        };
+
+        recognition.onend = () => {
+            console.log("Speech recognition ended");
+        };
+
+        recognition.onresult = (event) => {
+            const message = event.results[0][0].transcript;
+            setInputValue(message);
+            sendMessage(message);
+        };
+
+        recognition.start();
+    };
+
+    // End Mic Code
     const toggleChatbot = () => {
         setIsChatbotOpen((prevIsChatbotOpen) => !prevIsChatbotOpen);
         if (!isChatbotOpen) {
@@ -57,7 +85,7 @@ const Chatbot = () => {
 
     return (
         <div id="chatbot" className={`main-card ${isChatbotOpen ? "" : "collapsed"}`}>
-            <button id="chatbot_toggle" onClick={toggleChatbot}>    
+            <button id="chatbot_toggle" onClick={toggleChatbot}>
                 <ion-icon name="chatbubbles-outline" size="small" id="open"></ion-icon>
                 <ion-icon name="close-outline" size="small" className="close" id="close"></ion-icon>
             </button>
