@@ -20,7 +20,7 @@ function SignUp() {
         const message = `First Name: ${first_name}\nLast Name: ${last_name}\nShort Name: ${short_name}\nEmail: ${email}`;
         alert(message);
     }
-    const clientId = '1234504266475458-th4erlj9340rlvs1afsm3s3rsms2cclk.apps.googleusercontent.com';
+    const clientId = '504266475458-th4erlj9340rlvs1afsm3s3rsms2cclk.apps.googleusercontent.com';
 
     const responseGoogle = (response) => {
         console.log(response);
@@ -62,7 +62,7 @@ function SignUp() {
 
                                     <FacebookLogin
                                         // href="https://www.facebook.com/TechComrad/"
-                                        appId="12341681326525637957"
+                                        appId="1681326525637957"
                                         autoLoad={false}
                                         fields="first_name,last_name,short_name,email,picture"
                                         callback={responseFacebook}
@@ -91,14 +91,14 @@ function SignUp() {
                                         redirectUri="http://localhost:3000/sign-up"
                                     /> */}
 
-                                    <GoogleLogin
+                                    {/* <GoogleLogin
                                         className='button-google'
                                         clientId={clientId}
                                         buttonText="Sign in with google"
                                         onSuccess={responseGoogle}
                                         onFailure={responseGoogle}
                                         cookiePolicy={'single_host_origin'}
-                                    />
+                                    /> */}
                                 </div>
 
                                 <form className="mt-5">
