@@ -3,7 +3,7 @@
   --color-code: #BD1823;
 }
 
-body {
+/* body {
   height: 100vh;
   font-family: Roboto, sans-serif;
   margin: 0px;
@@ -11,7 +11,7 @@ body {
   overflow: hidden;
   background: gainsboro;
   display: flex
-}
+} */
 
 img {
   position: absolute;
@@ -201,7 +201,18 @@ div img {
 }
 
 .chat-message-div {
-  display: flex;
+  margin: 8px 64px 8px 16px;
+  padding: 8px 16px;
+  animation-name: fadeIn;
+  word-break: break-word;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 100ms;
+  color: var(--color-code);
+  border-radius: 8px 8px 8px 0px;
+  background-color: white;
+  border: 1px solid var(--color-code);
+  box-shadow: 3px 3px var(--color-code);
 }
 
 .chat-message-sent {
