@@ -73,7 +73,7 @@ function Footer() {
 
                         <div className="col-10">
                             <div className="left">
-                                <p>© Copyright 2023, Tech Comradery. All Rights Reserved.</p>
+                                <p>© Copyright 2023, Tech Comrad. All Rights Reserved.</p>
                             </div>
                         </div>
 
