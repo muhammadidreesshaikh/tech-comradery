@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import '../assets/css/chatbot.css';
-import image1 from "../assets/img/logo_tech.png";
+import image1 from "../assets/img/logo12.png";
 
 const Chatbot = () => {
     const [isChatbotOpen, setIsChatbotOpen] = useState(false);

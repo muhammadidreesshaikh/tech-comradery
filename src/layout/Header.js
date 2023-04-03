@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import '../assets/scss/header.scss';
 
-import logo from '../assets/img/TC_Logo_black_bg.png'
+import logo from '../assets/img/TC_Logo_white_BG.png'
 
 function Header() {
 
