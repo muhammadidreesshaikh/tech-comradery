@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../assets/scss/chat-bot.scss';
+import '../assets/scss/chat-page.scss';
 
 // image
 // import image from "../assets/img/unnamed.png";

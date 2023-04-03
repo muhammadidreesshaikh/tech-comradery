@@ -353,3 +353,35 @@ div img {
 ::placeholder {
   color: var(--color-code);
 }
+
+.main-card button#chatbot_toggle .hydrated:first-child,
+.main-card.collapsed button#chatbot_toggle .hydrated:last-child {
+  display: none;
+}
+
+.main-card.collapsed button#chatbot_toggle .hydrated:first-child,
+.main-card button#chatbot_toggle .hydrated:last-child {
+  display: block;
+}
+
+.main-card.collapsed .main-title img {
+  display: none
+}
+
+.main-card .main-title img {
+  display: block
+}
+
+ion-icon#refreshbtn {
+  font-size: 23px;
+  cursor: pointer;
+  margin: 11px 20px 0 0;
+}
+
+ion-icon#close {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  bottom: 7px;
+  right: 5px;
+}

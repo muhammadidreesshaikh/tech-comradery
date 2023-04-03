@@ -11,7 +11,7 @@ import FindTalent from './pages/FindTalent';
 import FindWork from './pages/FindWork';
 import Enterprise from './pages/Enterprise';
 import WhyCommradery from './pages/WhyCommradery';
-import ChatBot from './pages/ChatBot';
+import ChatPage from './pages/ChatPage';
 import Login from './auth/Login';
 import SignUp from './auth/SignUp';
 
@@ -36,7 +36,7 @@ function App() {
               <Route exact path='/find-work' element={<FindWork />}></Route>
               <Route exact path='/enterprise' element={<Enterprise />}></Route>
               <Route exact path='/why-commradery' element={<WhyCommradery />}></Route>
-              <Route exact path='/chat-bot' element={<ChatBot />}></Route>
+              <Route exact path='/chat-page' element={<ChatPage />}></Route>
               <Route exact path='/login' element={<Login />}></Route>
               <Route exact path='/sign-up' element={<SignUp />}></Route>
             </Routes>

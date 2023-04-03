@@ -90,7 +90,7 @@ const Chatbot = () => {
                 <ion-icon name="close-outline" size="small" className="close" id="close"></ion-icon>
             </button>
             <div className="main-title">
-                {/* <img src={image1} alt="Logo" /> */}
+                <img src={image1} alt="Logo" />
                 <span>AI Chatbot</span>
                 <ion-icon name="refresh-sharp" className="refreshbtn" id="refreshbtn" onClick={() => setMessages([])}></ion-icon>
             </div>
