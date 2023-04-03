@@ -25,7 +25,7 @@ function Header() {
                             <div className="col-3">
                                 <div className='logo'>
                                     {/* <Link to="/find-talent">Tech Comradery</Link> */}
-                                    <a href='/find-talent'><img src={logo} /></a>
+                                    <a href='http://staging.techcomrad.com/'><img src={logo} /></a>
                                 </div>
                             </div>
 
