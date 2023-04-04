@@ -49,76 +49,76 @@ function FindTalent() {
           <div className="row">
 
             <h1>Browse talent by <span>Category</span></h1>
-            <h5 className="hdng_title text-center">Looking for work? <span className="color-primary">Browse jobs</span></h5>
+            <h5>Looking for work? <span>Browse jobs</span></h5>
             <div className="row cate_row">
-              <div className="col col-lg-3 col-md-6">
+              <div className="col-12 col-md-6 col-lg-3">
                 <div className="bx-category">
                   <h4>Development & IT</h4>
                   <div className="row">
-                    <div className="col-6">4.85/5</div>
+                    <div className="col-6 text-start">4.85/5</div>
                     <div className="col-6 text-end">1853 skills</div>
                   </div>
                 </div>
               </div>
-              <div className="col col-lg-3 col-md-6">
+              <div className="col-12 col-md-6 col-lg-3">
                 <div className="bx-category">
                   <h4>Design & Creative</h4>
                   <div className="row">
-                    <div className="col-6">4.85/5</div>
+                    <div className="col-6 text-start">4.85/5</div>
                     <div className="col-6 text-end">1853 skills</div>
                   </div>
                 </div>
               </div>
-              <div className="col col-lg-3 col-md-6">
+              <div className="col-12 col-md-6 col-lg-3">
                 <div className="bx-category">
                   <h4>Sales & Marketing</h4>
                   <div className="row">
-                    <div className="col-6">4.85/5</div>
+                    <div className="col-6 text-start">4.85/5</div>
                     <div className="col-6 text-end">1853 skills</div>
                   </div>
                 </div>
               </div>
-              <div className="col col-lg-3 col-md-6">
+              <div className="col-12 col-md-6 col-lg-3">
                 <div className="bx-category">
                   <h4>Writing & Translation</h4>
                   <div className="row">
-                    <div className="col-6">4.85/5</div>
+                    <div className="col-6 text-start">4.85/5</div>
                     <div className="col-6 text-end">1853 skills</div>
                   </div>
                 </div>
               </div>
-              <div className="col col-lg-3 col-md-6">
+              <div className="col-12 col-md-6 col-lg-3">
                 <div className="bx-category">
                   <h4>Admin & Customer Support</h4>
                   <div className="row">
-                    <div className="col-6">4.85/5</div>
+                    <div className="col-6 text-start">4.85/5</div>
                     <div className="col-6 text-end">1853 skills</div>
                   </div>
                 </div>
               </div>
-              <div className="col col-lg-3 col-md-6">
+              <div className="col-12 col-md-6 col-lg-3">
                 <div className="bx-category">
                   <h4>Finance & Accounting</h4>
                   <div className="row">
-                    <div className="col-6">4.85/5</div>
+                    <div className="col-6 text-start">4.85/5</div>
                     <div className="col-6 text-end">1853 skills</div>
                   </div>
                 </div>
               </div>
-              <div className="col col-lg-3 col-md-6">
+              <div className="col-12 col-md-6 col-lg-3">
                 <div className="bx-category">
                   <h4>Engineering & Architecture</h4>
                   <div className="row">
-                    <div className="col-6">4.85/5</div>
+                    <div className="col-6 text-start">4.85/5</div>
                     <div className="col-6 text-end">1853 skills</div>
                   </div>
                 </div>
               </div>
-              <div className="col col-lg-3 col-md-6">
+              <div className="col-12 col-md-6 col-lg-3">
                 <div className="bx-category">
                   <h4>Legal</h4>
                   <div className="row">
-                    <div className="col-6">4.85/5</div>
+                    <div className="col-6 text-start">4.85/5</div>
                     <div className="col-6 text-end">1853 skills</div>
                   </div>
                 </div>
@@ -226,24 +226,32 @@ function FindTalent() {
           <div className="row justify-content-center">
 
             <div class="tab row">
-              <div className="col-3 px-0">
-                <a className="tablinks" onClick={() => setTab(1)}>Top Skills</a>
-                <div className={"seprator " + ((tab == 1) ? "active" : "")}></div>
+              <div className="col-12 col-md-3 col-lg-3 px-0">
+                <div className="inner">
+                  <a href="#1st" className="tablinks" onClick={() => setTab(1)}>Top Skills</a>
+                  <div className={"seprator " + ((tab == 1) ? "active" : "")}></div>
+                </div>
               </div>
 
-              <div className="col-3 px-0">
-                <a className="tablinks" onClick={() => setTab(2)}>Trending Skills</a>
-                <div className={"seprator " + ((tab == 2) ? "active" : "")}></div>
+              <div className="col-12 col-md-3 col-lg-3 px-0">
+                <div className="inner">
+                  <a href="#second" className="tablinks" onClick={() => setTab(2)}>Trending Skills</a>
+                  <div className={"seprator " + ((tab == 2) ? "active" : "")}></div>
+                </div>
               </div>
 
-              <div className="col-3 px-0">
-                <a className="tablinks" onClick={() => setTab(3)}>Top Skills in US</a>
-                <div className={"seprator " + ((tab == 3) ? "active" : "")}></div>
+              <div className="col-12 col-md-3 col-lg-3 px-0">
+                <div className="inner">
+                  <a href="#third" className="tablinks" onClick={() => setTab(3)}>Top Skills in US</a>
+                  <div className={"seprator " + ((tab == 3) ? "active" : "")}></div>
+                </div>
               </div>
 
-              <div className="col-3 px-0">
-                <a className="tablinks" onClick={() => setTab(4)}>Project Catalog</a>
-                <div className={"seprator " + ((tab == 4) ? "active" : "")}></div>
+              <div className="col-12 col-md-3 col-lg-3 px-0">
+                <div className="inner">
+                  <a href="#four" className="tablinks" onClick={() => setTab(4)}>Project Catalog</a>
+                  <div className={"seprator " + ((tab == 4) ? "active" : "")}></div>
+                </div>
               </div>
             </div>
 
@@ -258,9 +266,12 @@ function FindTalent() {
             <div className="col-12 ">
               {
                 tab == 1 ?
-                  <div class="tabcontent">
+                  <div class="tabcontent" id="1st">
                     <div className="row">
-                      <div className="col-3">
+                      <div className="col-6 co-md-3 col-lg-3">
+                        {/* <a className="tablinks" onClick={() => setTab(1)}>Top Skills</a>
+                        <div className={"seprator " + ((tab == 1) ? "active" : "")}></div> */}
+
                         <ul>
                           <li><a href="#">Data Entry Specialists</a></li>
                           <li><a href="#">Video Editors</a></li>
@@ -273,7 +284,7 @@ function FindTalent() {
                         </ul>
                       </div>
 
-                      <div className="col-3">
+                      <div className="col-6 co-md-3 col-lg-3">
                         <ul>
                           <li><a href="#">Copywriter</a></li>
                           <li><a href="#">Database Administrator</a></li>
@@ -286,7 +297,7 @@ function FindTalent() {
                         </ul>
                       </div>
 
-                      <div className="col-3">
+                      <div className="col-6 co-md-3 col-lg-3">
                         <ul>
                           <li><a href="#">JavaScript Developer</a></li>
                           <li><a href="#">Logo Designer</a></li>
@@ -299,7 +310,7 @@ function FindTalent() {
                         </ul>
                       </div>
 
-                      <div className="col-3">
+                      <div className="col-6 co-md-3 col-lg-3">
                         <ul>
                           <li><a href="#">Software Developer</a></li>
                           <li><a href="#">Software Engineer</a></li>
@@ -321,9 +332,9 @@ function FindTalent() {
             <div className="col-12">
               {
                 tab == 2 ?
-                  <div class="tabcontent">
+                  <div class="tabcontent" id="second">
                     <div className="row">
-                      <div className="col-3">
+                      <div className="col-6 co-md-3 col-lg-3">
                         <ul>
                           <li><a href="#">Software Developer</a></li>
                           <li><a href="#">Software Engineer</a></li>
@@ -336,7 +347,7 @@ function FindTalent() {
                         </ul>
                       </div>
 
-                      <div className="col-3">
+                      <div className="col-6 co-md-3 col-lg-3">
                         <ul>
                           <li><a href="#">Data Entry Specialists</a></li>
                           <li><a href="#">Video Editors</a></li>
@@ -349,7 +360,7 @@ function FindTalent() {
                         </ul>
                       </div>
 
-                      <div className="col-3">
+                      <div className="col-6 co-md-3 col-lg-3">
                         <ul>
                           <li><a href="#">Copywriter</a></li>
                           <li><a href="#">Database Administrator</a></li>
@@ -362,7 +373,7 @@ function FindTalent() {
                         </ul>
                       </div>
 
-                      <div className="col-3">
+                      <div className="col-6 co-md-3 col-lg-3">
                         <ul>
                           <li><a href="#">JavaScript Developer</a></li>
                           <li><a href="#">Logo Designer</a></li>
@@ -384,9 +395,9 @@ function FindTalent() {
             <div className="col-12">
               {
                 tab == 3 ?
-                  <div class="tabcontent">
+                  <div class="tabcontent" id="third">
                     <div className="row">
-                      <div className="col-3">
+                      <div className="col-6 co-md-3 col-lg-3">
                         <ul>
                           <li><a href="#">Data Entry Specialists</a></li>
                           <li><a href="#">Video Editors</a></li>
@@ -399,7 +410,7 @@ function FindTalent() {
                         </ul>
                       </div>
 
-                      <div className="col-3">
+                      <div className="col-6 co-md-3 col-lg-3">
                         <ul>
                           <li><a href="#">Copywriter</a></li>
                           <li><a href="#">Database Administrator</a></li>
@@ -412,7 +423,7 @@ function FindTalent() {
                         </ul>
                       </div>
 
-                      <div className="col-3">
+                      <div className="col-6 co-md-3 col-lg-3">
                         <ul>
                           <li><a href="#">JavaScript Developer</a></li>
                           <li><a href="#">Logo Designer</a></li>
@@ -425,7 +436,7 @@ function FindTalent() {
                         </ul>
                       </div>
 
-                      <div className="col-3">
+                      <div className="col-6 co-md-3 col-lg-3">
                         <ul>
                           <li><a href="#">Software Developer</a></li>
                           <li><a href="#">Software Engineer</a></li>
@@ -447,9 +458,9 @@ function FindTalent() {
             <div className="col-12">
               {
                 tab == 4 ?
-                  <div class="tabcontent">
+                  <div class="tabcontent" id="four">
                     <div className="row">
-                      <div className="col-3">
+                      <div className="col-6 co-md-3 col-lg-3">
                         <ul>
                           <li><a href="#">Software Developer</a></li>
                           <li><a href="#">Software Engineer</a></li>
@@ -462,7 +473,7 @@ function FindTalent() {
                         </ul>
                       </div>
 
-                      <div className="col-3">
+                      <div className="col-6 co-md-3 col-lg-3">
                         <ul>
                           <li><a href="#">Data Entry Specialists</a></li>
                           <li><a href="#">Video Editors</a></li>
@@ -475,7 +486,7 @@ function FindTalent() {
                         </ul>
                       </div>
 
-                      <div className="col-3">
+                      <div className="col-6 co-md-3 col-lg-3">
                         <ul>
                           <li><a href="#">Copywriter</a></li>
                           <li><a href="#">Database Administrator</a></li>
@@ -488,7 +499,7 @@ function FindTalent() {
                         </ul>
                       </div>
 
-                      <div className="col-3">
+                      <div className="col-6 co-md-3 col-lg-3">
                         <ul>
                           <li><a href="#">JavaScript Developer</a></li>
                           <li><a href="#">Logo Designer</a></li>

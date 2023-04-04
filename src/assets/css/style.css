@@ -112,15 +112,28 @@ span.primary-color {
     /* color: var(--color-white); */
 }
 
-.sec-category h1{
+.sec-category h1 {
     text-align: center;
     font-size: 40px;
-    color: white;
+    color: var(--color-white);
     font-weight: 300;
 }
 
-.sec-category h1 span{
+.sec-category h1 span {
     font-weight: 700;
+    color: var(--color-green);
+}
+
+.sec-category h5 {
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 13px;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.sec-category h5 span{
+    color: var(--color-green);
 }
 
 /* h1.main_hdng .normal {
@@ -148,16 +161,20 @@ span.primary-color {
     border-radius: 10px;
     color: var(--color-green);
     padding: 30px;
-    margin-bottom: 50px;
+    margin-top: 50px;
     text-align: left;
     font-size: 24px;
     transition: 0.5s;
 }
 
 .bx-category h4 {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 600;
     min-height: 70px;
+}
+
+.sec-category .bx-category .text-start, .text-end{
+    font-size: 21px;
 }
 
 .bx-category:hover {
@@ -297,18 +314,12 @@ ul.ul_company li {
 /**/
 
 .sec-tabs {
-    padding: 20px 0;
+    padding: 3.5rem 0;
     background-color: var(--color-green);
-    width: 100%;
-    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-/* .sec-tabs .tab{
-       
-} */
 
 .sec-tabs .tab .seprator {
     margin-top: 10px;
@@ -392,7 +403,8 @@ ul.ul_company li {
         font-size: 21px;
     }
 
-    .find-talent .find-btns .green, .white {
+    .find-talent .find-btns .green,
+    .white {
         padding: 10px 20px;
         font-size: 17px;
     }
@@ -428,12 +440,53 @@ ul.ul_company li {
         font-size: 20px;
     }
 
-    .find-talent .find-btns .green, .white {
+    .find-talent .find-btns .green,
+    .white {
         padding: 10px 20px;
         font-size: 17px;
     }
 
+    .sec-category h1 {
+        font-size: 32px;
+    }
+
+    .bx-category {
+        margin: 15px 0 0 0;
+    }
+
     .bx-category h4 {
-        font-size: 24px;
+        font-size: 20px;
+        min-height: 50px;
+    }
+
+    .sec-tabs {
+        padding: 16px 0;
+    }
+
+    .sec-tabs .tab .inner {
+        margin: 25px 0;
+        text-align: center;
+    }
+
+    .sec-tabs .tab .seprator {
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+
+    .sec-tabs-content {
+        padding: 5px 0 25px 0;
+    }
+
+    .sec-tabs-content .tabcontent ul {
+        padding: 25px 0;
+    }
+
+    .sec-tabs-content .tabcontent li {
+        padding-top: 13px;
+    }
+
+    .sec-tabs-content .tabcontent a {
+        font-size: 17px;
     }
 }
