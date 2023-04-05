@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import '../assets/scss/header.scss';
 
-import logo from '../assets/img/TC_Logo_white_BG.png'
+import logo from '../assets/img/TC_Logo_white_BG.png';
+import logo1 from '../assets/img/TC_Logo_black_bg2.png';
 
 function Header() {
 
@@ -68,14 +69,17 @@ function Header() {
                             <div className={"mobile-menu sidenav " + (menuToggle ? 'open' : 'close')}>
                                 <div className="col-sm-4 col-md-4 col-lg-4">
                                     <div className='logo'>
-                                        <a href="#"><i class="fas fa-dice-d20"></i></a>
+                                        {/* <a href="#"><i class="fas fa-dice-d20"></i></a> */}
+                                        <a href='http://staging.techcomrad.com/'><img src={logo1} /></a>
                                     </div>
                                 </div>
 
-                                <li><Link to={process.env.PUBLIC_URL + '/find-talent'} onClick={() => setMenuToggle(!menuToggle)}>Find Talent</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + '/find-work'} onClick={() => setMenuToggle(!menuToggle)}>Find Work</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + '/enterprise'} onClick={() => setMenuToggle(!menuToggle)}>Enterprise</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + '/why-commradery'} onClick={() => setMenuToggle(!menuToggle)}>Why Comradery</Link></li>
+                                <ul>
+                                    <li><Link to={process.env.PUBLIC_URL + '/find-talent'} onClick={() => setMenuToggle(!menuToggle)}>Find Talent</Link></li>
+                                    <li><Link to={process.env.PUBLIC_URL + '/find-work'} onClick={() => setMenuToggle(!menuToggle)}>Find Work</Link></li>
+                                    <li><Link to={process.env.PUBLIC_URL + '/enterprise'} onClick={() => setMenuToggle(!menuToggle)}>Enterprise</Link></li>
+                                    <li><Link to={process.env.PUBLIC_URL + '/why-commradery'} onClick={() => setMenuToggle(!menuToggle)}>Why Comradery</Link></li>
+                                </ul>
                             </div>
 
                         </div>

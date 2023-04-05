@@ -242,10 +242,6 @@
 
 /* menu desktop and mobile switching on responsive  */
 @media only screen and (max-width: 768px) {
-    .mobile-menu-toggle {
-        display: block;
-    }
-
     .header {
         height: 12vh;
         padding: 20px 0;
@@ -264,6 +260,8 @@
 
         .mobile-menu-toggle {
             top: 25px;
+            display: block;
+            z-index: 6;
         }
     }
 }
@@ -272,9 +270,41 @@
     .header {
         height: 10vh;
 
-        .logo {
-            img {
-                width: 140px;
+        .desktop-menu {
+            .logo {
+                img {
+                    width: 140px;
+                }
+            }
+
+            .sidenav {
+                li {
+                    list-style: none;
+                }
+            }
+
+            .mobile-menu {
+                .logo {
+                    img {
+                        width: 80px;
+                        position: absolute;
+                        top: 10px;
+                        left: 20px;
+                    }
+                }
+
+                &.sidenav{
+                    z-index: 5;
+                    a{
+                        text-align: unset;
+                        font-size: 23px;
+                    }
+                }
+
+                ul {
+                    padding-left: 14px;
+                    margin-top: 50px;
+                }
             }
         }
     }

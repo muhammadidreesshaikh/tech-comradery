@@ -12,9 +12,9 @@
     position: relative;
     background-image: url();
     border: 3px dashed hsl(120deg 100% 30% / 52%);
-    width: calc(100% - 15px);
+    width: calc(90% - 15px);
     margin-left: auto;
-    height: calc(100% - 15px);
+    height: calc(90% - 15px);
 }
 
 .img-work img {
@@ -132,7 +132,7 @@ span.primary-color {
     color: var(--color-white);
 }
 
-.sec-category h5 span{
+.sec-category h5 span {
     color: var(--color-green);
 }
 
@@ -173,7 +173,8 @@ span.primary-color {
     min-height: 70px;
 }
 
-.sec-category .bx-category .text-start, .text-end{
+.sec-category .bx-category .text-start,
+.text-end {
     font-size: 21px;
 }
 
@@ -197,35 +198,37 @@ p {
 }
 
 .sec-companygood p {
+    font-size: 19px;
+    padding-top: 10px;
+}
+
+.sec-companygood button.green {
+    margin-top: 20px;
+}
+
+/* .sec-companygood p {
     margin-bottom: 40px !important;
     margin-top: 40px !important;
     width: 580px;
     max-width: 100%;
-}
+} */
 
 h1.main_hdng span.title {
     font-size: 26px;
     font-weight: 500;
 }
 
-.sec-companygood p {
-    margin-bottom: 40px !important;
-    margin-top: 40px !important;
-    width: 580px;
-    max-width: 100%;
-}
-
 ul.ul_company {
     list-style: none;
     padding: 0;
-    margin-top: 30px;
-    font-size: 26px;
+    margin-top: 40px;
+    font-size: 24px;
 }
 
 ul.ul_company li img {
-    margin-right: 30px;
-    width: 30px;
-    height: 30px;
+    margin-right: 25px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
 }
 
@@ -241,16 +244,17 @@ ul.ul_company li {
     color: var(--color-white);
 }
 
-.sec-talent .main_hdng {
-    margin-bottom: 30px !important;
+.sec-talent h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
 }
 
 .sec-talent p {
-    margin-bottom: 50px !important;
-}
-
-.bx-talent-row {
-    margin: 0 -20px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
 }
 
 .bx-talent-row>div {
@@ -260,17 +264,28 @@ ul.ul_company li {
 .bx-talent {
     display: inline-block;
     width: 100%;
+    height: 160px;
     background-color: var(--color-white);
     border-radius: 8px;
-    text-align: left;
-    padding: 20px;
+    padding: 35px 20px;
     color: var(--color-green);
     font-size: 22px;
+    margin-top: 40px;
 }
 
 .bx-talent h4 {
-    font-size: 28px;
-    margin-bottom: 20px !important;
+    font-size: 23px;
+    padding-bottom: 30px;
+}
+
+.bx-talent span.bottomtitle{
+    font-size: 18px;
+}
+
+.bx-talent i {
+    float: right;
+    padding-top: 12px;
+    font-size: 17px;
 }
 
 /**/
@@ -280,12 +295,12 @@ ul.ul_company li {
     text-align: left;
 }
 
-.sec-worktalent p {
+/* .sec-worktalent p {
     margin-top: 20px !important;
     margin-bottom: 20px !important;
     width: 771px;
     max-width: 100%;
-}
+} */
 
 .sec-worktalent ul {
     list-style: none;
@@ -416,8 +431,8 @@ ul.ul_company li {
     }
 
     .img-work {
-        width: calc(85% - 15px);
-        height: calc(95% - 15px);
+        width: calc(85% - 0px);
+        height: calc(95% - 5px);
     }
 
     .img-work .verticaltxt {
@@ -446,6 +461,7 @@ ul.ul_company li {
         font-size: 17px;
     }
 
+    /* .sec-category */
     .sec-category h1 {
         font-size: 32px;
     }
@@ -459,6 +475,66 @@ ul.ul_company li {
         min-height: 50px;
     }
 
+    /* .sec-companygood */
+    .sec-companygood {
+        padding: 50px 0;
+    }
+
+    .sec-companygood h1.main_hdng span.primary-color.d-block {
+        font-size: 20px;
+    }
+
+    .sec-companygood p {
+        font-size: 18px;
+        padding-top: 10px;
+    }
+
+    .sec-companygood button.green {
+        margin-top: 20px;
+    }
+
+    ul.ul_company {
+        padding: 0;
+        margin: 20px 0 40px 0;
+        font-size: 18px;
+    }
+
+    ul.ul_company li {
+        padding-top: 30px;
+        line-height: unset;
+    }
+
+    ul.ul_company li img {
+        margin-right: 5px;
+        width: 30px;
+        height: 30px;
+    }
+
+    /* sec-worktalent */
+    h1.main_hdng span.title {
+        font-size: 20px;
+    }
+
+    .sec-worktalent .work_cntnt p {
+        font-size: 19px;
+        padding-top: 7px;
+    }
+
+    .sec-worktalent .work_cntnt ul {
+        font-size: 18px;
+        line-height: 48px;
+        margin: 20px 0 0 0;
+    }
+
+    .sec-worktalent .work_cntnt ul li {
+        padding-left: 30px;
+    }
+
+    .sec-worktalent .work_cntnt button.green {
+        margin-top: 20px;
+    }
+
+    /* sec-tabs */
     .sec-tabs {
         padding: 16px 0;
     }

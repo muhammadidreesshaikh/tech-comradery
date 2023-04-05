@@ -134,11 +134,11 @@ function FindTalent() {
           <div className="row">
             <div className="col-md-8">
               <h1 className="main_hdng"><span className="primary-color title d-block">Enterprise Suite</span> This is how good companies find good company.</h1>
-              <p className="">
+              <p>
                 Register and browse professionals, explore projects, or even book a consultation.
               </p>
 
-              <button className="btn btn-cstm green">Learn More</button>
+              <button className="green">Learn More</button>
 
               <ul className="ul_company">
                 <li><img src={require('./../assets/img/icon-setting.png')} /><span className="txt"> Access expert talent to fill your skill gaps</span> </li>
@@ -159,30 +159,30 @@ function FindTalent() {
         <div className="container">
           <div className="row">
             <div className="col-lg-7 m-auto">
-              <h1 className="main_hdng">Find talent your way</h1>
+              <h1>Find talent your way</h1>
               <p>
                 Work with the largest network of independent professionals and get things done—from quick turnarounds to big transformations.
               </p>
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-9 m-auto">
+            <div className="col-lg-11 m-auto">
               <div className="row bx-talent-row">
-                <div className="col-md-4">
+                <div className="col-lg-4">
                   <a href="javascript:;" className="bx-talent">
                     <h4>Post a job and hire a pro</h4>
                     <span className="bottomtitle">Talent Marketplace</span>
                     <i className="fa fa-arrow-right"></i>
                   </a>
                 </div>
-                <div className="col-md-4">
+                <div className="col-lg-4">
                   <a href="javascript:;" className="bx-talent">
                     <h4>Browse and buy projects</h4>
                     <span className="bottomtitle">Talent Marketplace</span>
                     <i className="fa fa-arrow-right"></i>
                   </a>
                 </div>
-                <div className="col-md-4">
+                <div className="col-lg-4">
                   <a href="javascript:;" className="bx-talent">
                     <h4>Let us help you find the right talent</h4>
                     <span className="bottomtitle">Talent Marketplace</span>
@@ -214,7 +214,7 @@ function FindTalent() {
                 <li>Explore different ways to earn</li>
               </ul>
 
-              <button className="btn btn-cstm green">Find Opportunities</button>
+              <button className="green">Find Opportunities</button>
             </div>
 
           </div>
