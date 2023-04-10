@@ -168,21 +168,21 @@ function FindTalent() {
           <div className="row">
             <div className="col-lg-11 m-auto">
               <div className="row bx-talent-row">
-                <div className="col-lg-4">
+                <div className="col-12 col-md-12 col-lg-4">
                   <a href="javascript:;" className="bx-talent">
                     <h4>Post a job and hire a pro</h4>
                     <span className="bottomtitle">Talent Marketplace</span>
                     <i className="fa fa-arrow-right"></i>
                   </a>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-12 col-md-12 col-lg-4">
                   <a href="javascript:;" className="bx-talent">
                     <h4>Browse and buy projects</h4>
                     <span className="bottomtitle">Talent Marketplace</span>
                     <i className="fa fa-arrow-right"></i>
                   </a>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-12 col-md-12 col-lg-4">
                   <a href="javascript:;" className="bx-talent">
                     <h4>Let us help you find the right talent</h4>
                     <span className="bottomtitle">Talent Marketplace</span>

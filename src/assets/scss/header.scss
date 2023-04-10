@@ -248,7 +248,7 @@
 
         .logo {
             img {
-                width: 160px;
+                width: 140px;
             }
         }
 
@@ -263,6 +263,36 @@
             display: block;
             z-index: 6;
         }
+
+        .sidenav {
+            li {
+                list-style: none;
+            }
+        }
+
+        .mobile-menu {
+            .logo {
+                img {
+                    width: 80px;
+                    position: absolute;
+                    top: 10px;
+                    left: 20px;
+                }
+            }
+
+            &.sidenav {
+                z-index: 5;
+
+                a {
+                    font-size: 23px;
+                }
+            }
+
+            ul {
+                padding-left: 14px;
+                margin-top: 50px;
+            }
+        }
     }
 }
 
@@ -271,41 +301,134 @@
         height: 10vh;
 
         .desktop-menu {
-            .logo {
-                img {
+
+            .logo{
+                img{
                     width: 140px;
                 }
             }
 
-            .sidenav {
-                li {
-                    list-style: none;
-                }
-            }
-
             .mobile-menu {
-                .logo {
-                    img {
-                        width: 80px;
-                        position: absolute;
-                        top: 10px;
-                        left: 20px;
-                    }
-                }
-
-                &.sidenav{
-                    z-index: 5;
-                    a{
+                &.sidenav {
+                    a {
                         text-align: unset;
                         font-size: 23px;
                     }
                 }
 
-                ul {
-                    padding-left: 14px;
-                    margin-top: 50px;
+
+            }
+        }
+
+        .mobile-menu-toggle {
+            top: 27px;
+        }
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .header {
+        height: 12vh;
+
+        .desktop-menu {
+            .logo{
+                img{
+                    width: 135px;
                 }
             }
+
+            .mobile-menu {
+                &.sidenav {
+                    a {
+                        text-align: unset;
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+
+        .mobile-menu-toggle {
+            top: 27px;
+        }
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .header {
+        height: 10vh;
+
+        .desktop-menu {
+            .logo{
+                img{
+                    width: 130px;
+                }
+            }
+            .mobile-menu {
+                &.sidenav {
+                    a {
+                        text-align: unset;
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+
+        .mobile-menu-toggle {
+            top: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .header {
+        height: 12vh;
+
+        .desktop-menu {
+            .logo{
+                img{
+                    width: 130px;
+                }
+            }
+
+            .mobile-menu {
+                &.sidenav {
+                    a {
+                        text-align: unset;
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+
+        .mobile-menu-toggle {
+            top: 22px;
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .header {
+        height: 12vh;
+
+        .desktop-menu {
+            .logo{
+                img{
+                    width: 135px;
+                }
+            }
+
+            .mobile-menu {
+                &.sidenav {
+                    a {
+                        text-align: unset;
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+
+        .mobile-menu-toggle {
+            top: 22px;
         }
     }
 }

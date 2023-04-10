@@ -278,7 +278,7 @@ ul.ul_company li {
     padding-bottom: 30px;
 }
 
-.bx-talent span.bottomtitle{
+.bx-talent span.bottomtitle {
     font-size: 18px;
 }
 
@@ -564,5 +564,20 @@ ul.ul_company li {
 
     .sec-tabs-content .tabcontent a {
         font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .find-talent .find-btns .green, .white {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .find-talent .find-btns .green,
+    .white {
+        padding: 10px 14px;
+        font-size: 15px;
     }
 }
