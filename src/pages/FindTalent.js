@@ -522,6 +522,7 @@ function FindTalent() {
         </div>
       </section>
 
+      
     </div>
   );
 }
