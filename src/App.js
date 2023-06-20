@@ -31,14 +31,14 @@ function App() {
           {/* all components */} 
           <div>
             <Routes>
-              <Route exact path='/' element={<FindTalent />}></Route>
-              <Route exact path='/find-talent' element={<FindTalent />}></Route>
-              <Route exact path='/find-work' element={<FindWork />}></Route>
-              <Route exact path='/enterprise' element={<Enterprise />}></Route>
-              <Route exact path='/why-commradery' element={<WhyCommradery />}></Route>
-              <Route exact path='/chat-page' element={<ChatPage />}></Route>
-              <Route exact path='/login' element={<Login />}></Route>
-              <Route exact path='/sign-up' element={<SignUp />}></Route>
+              <Route exact path='/beta' element={<FindTalent />}></Route>
+              <Route exact path='/beta/find-talent' element={<FindTalent />}></Route>
+              <Route exact path='/beta/find-work' element={<FindWork />}></Route>
+              <Route exact path='/beta/enterprise' element={<Enterprise />}></Route>
+              <Route exact path='/beta/why-commradery' element={<WhyCommradery />}></Route>
+              <Route exact path='/beta/chat-page' element={<ChatPage />}></Route>
+              <Route exact path='/beta/login' element={<Login />}></Route>
+              <Route exact path='/beta/sign-up' element={<SignUp />}></Route>
             </Routes>
           </div>
 

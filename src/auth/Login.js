@@ -69,7 +69,7 @@ function Login() {
 
                                 <div className="new-account">
                                     <span>Don't have an Account?</span>
-                                    <Link to="/sign-up"> Join now. </Link>
+                                    <Link to="/beta/sign-up"> Join now. </Link>
                                 </div>
                             </div>
                         </div>

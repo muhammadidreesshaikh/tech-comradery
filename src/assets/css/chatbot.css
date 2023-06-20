@@ -310,14 +310,14 @@ div img {
   background: #555;
 }
 
-@media (min-width: 450px) {
+/* @media (min-width: 450px) { */
   .main-card {
     width: 96%;
     max-width: 400px;
     height: calc(100% - 32px) !important;
     border-radius: 8px !important;
     max-height: 600px;
-    margin: 16px !important;
+    /* margin: 16px !important; */
   }
 
   .collapsed {
@@ -339,12 +339,13 @@ div img {
     flex-direction: column;
     overflow: hidden;
     right: 0;
-    bottom: 50px;
+    bottom: 0px;
+    z-index: 3;
     position: fixed;
     transition: all 0.5s;
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-}
+/* } */
 
 ::-webkit-scrollbar {
   display: none;

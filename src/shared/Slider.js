@@ -16,7 +16,7 @@ function Slider() {
                       <p>Forget the old rules. You can have the best people. <br/> Right now. Right here.</p>
 
                       <div className="slider-btn">
-                        <Link to="/" className="white">Get Started</Link>
+                        <Link to="/beta" className="white">Get Started</Link>
                       </div>
                   </div>
               </div>

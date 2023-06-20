@@ -177,7 +177,7 @@ function SignUp() {
 
                                 <div className="new-account">
                                     <span>Already have an account?</span>
-                                    <Link to="/login"> Login </Link>
+                                    <Link to="/beta/login"> Login </Link>
                                 </div>
                             </div>
                         </div>
