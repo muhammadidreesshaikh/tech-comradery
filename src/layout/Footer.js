@@ -68,13 +68,13 @@ function Footer() {
                 <div className="container">
                     <div className="row">
 
-                        <div className="col-12 col-lg-7">
+                        <div className="col-12 col-md-7 col-lg-7">
                             <div className="left">
                                 <p>© Copyright 2023, Tech Comrad. All Rights Reserved.</p>
                             </div>
                         </div>
 
-                        <div className="col-12 col-lg-5">
+                        <div className="col-12 col-md-5 col-lg-5">
                             <div className="right">
                                 <a href='#'><i class="fa-brands fa-youtube"></i></a>
                                 <a href='https://www.facebook.com/TechComrad/'><i class="fa-brands fa-facebook"></i></a>
