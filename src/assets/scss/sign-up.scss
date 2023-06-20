@@ -34,6 +34,12 @@
                     box-shadow: 0px 0px 0px 0px !important;
                     margin-right: 8px !important;
                     text-transform: capitalize !important;
+                    width: 100%;
+                    justify-content: center;
+
+                    @media (max-width: 600px) {
+                        margin-bottom: 12px;
+                    }
 
                     &:hover {
                         opacity: 0.5s;
@@ -59,6 +65,7 @@
                     box-shadow: 0px 0px 0px 0px !important;
                     text-transform: capitalize !important;
                     margin-right: 8px !important;
+                    width: 100%;
 
                     i.fab.fa-facebook {
                         color: #0c87e5;

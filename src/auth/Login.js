@@ -13,7 +13,7 @@ function Login() {
                 <div className="container">
                     <div className="row justify-content-center">
 
-                        <div className='col-5'>
+                        <div className='col-12 col-md-9 col-lg-5'>
                             <div className='inner'>
                                 <h3>Login</h3>
                                 <p>Inspirational designs, illustrations, and graphic elements from the world’s best designers. Want more inspiration? Browse our</p>
@@ -57,14 +57,18 @@ function Login() {
                                         </div>
                                     </div>
 
-                                    <div className="login-btn mt-5">
+                                    <div className="login-btn mt-4">
                                         <a className="green d-block">Login</a>
                                     </div>
 
-                                    <div className="social-btns mt-5">
-                                    <a href='https://support.google.com' className="green w-100 mt-3"><img src={image} /> Sign in with Google</a>
-                                    <a href='https://www.facebook.com/login/' className="white w-100 mt-3"><img src={image1} /> Sign in with Facebook</a>
-                                </div>
+                                    <div className="social-btns row mt-1 g-3">
+                                        <div className='col-sm-6'>
+                                            <a href='https://support.google.com' className="green d-block w-100"><img src={image} /> Sign in with Google</a>
+                                        </div>
+                                        <div className='col-sm-6'>
+                                            <a href='https://www.facebook.com/login/' className="white d-block w-100"><img src={image1} /> Sign in with Facebook</a>
+                                        </div>
+                                    </div>
                                 </form>
 
                                 <div className="new-account">

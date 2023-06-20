@@ -36,8 +36,8 @@ function SignUp() {
     }, []);
 
     const clientIdLinkedin = '77bfyf3fb3h9yg';
-    const handleSuccess = (response) => {console.log(response); }
-    const handleFailure = (error) => {console.log(error); }
+    const handleSuccess = (response) => { console.log(response); }
+    const handleFailure = (error) => { console.log(error); }
 
     return (
         <div>
@@ -45,33 +45,39 @@ function SignUp() {
                 <div className="container">
                     <div className="row justify-content-center">
 
-                        <div className='col-7'>
+                        <div className='col-12 col-md-9 col-lg-5'>
                             <div className='inner'>
                                 <h3>Sign Up</h3>
                                 <p>Inspirational designs, illustrations, and graphic elements from the world’s best designers. Want more inspiration? Browse our</p>
 
                                 <div className="social-btns mt-5">
-                                    <GoogleLogin
-                                        className='button-google'
-                                        clientId={clientId}
-                                        buttonText="Sign in with google"
-                                        onSuccess={responseGoogle}
-                                        onFailure={responseGoogle}
-                                        cookiePolicy={'single_host_origin'}
-                                    />
+                                    <div className='row'>
+                                        <div className='col-sm-6'>
+                                            <GoogleLogin
+                                                className='button-google'
+                                                clientId={clientId}
+                                                buttonText="Sign in with google"
+                                                onSuccess={responseGoogle}
+                                                onFailure={responseGoogle}
+                                                cookiePolicy={'single_host_origin'}
+                                            />
+                                        </div>
 
-                                    <FacebookLogin
-                                        // href="https://www.facebook.com/TechComrad/"
-                                        appId="1681326525637957"
-                                        autoLoad={false}
-                                        fields="first_name,last_name,short_name,email,picture"
-                                        callback={responseFacebook}
-                                        render={renderProps => (
-                                            <button onClick={renderProps.onClick} ><img src={image1} /> Sign in with Facebook</button>
-                                        )}
-                                        icon={<i className="fab fa-facebook"></i>}
-                                        textButton="Sign in with Facebook"
-                                    />
+                                        <div className='col-sm-6'>
+                                            <FacebookLogin
+                                                // href="https://www.facebook.com/TechComrad/"
+                                                appId="1681326525637957"
+                                                autoLoad={false}
+                                                fields="first_name,last_name,short_name,email,picture"
+                                                callback={responseFacebook}
+                                                render={renderProps => (
+                                                    <button onClick={renderProps.onClick} ><img src={image1} /> Sign in with Facebook</button>
+                                                )}
+                                                icon={<i className="fab fa-facebook"></i>}
+                                                textButton="Sign in with Facebook"
+                                            />
+                                        </div>
+                                    </div>
 
                                     {/* <LinkedInLogin
                                         className='button-linked'
@@ -138,35 +144,16 @@ function SignUp() {
                                         />
                                     </div>
 
-                                    {/* <div className="row forgot-checkout">
-                                        <div className="col-6">
-                                            <div className="form-group checkout form-check">
-                                                <input
-                                                    type="checkbox"
-                                                    class="form-check-input"
-                                                />
-                                                <label className="form-check-label">
-                                                    I've read and agree with Terms of Services and our Privacy Policy.
-                                                </label>
-                                            </div>
+                                    <div className="read-checkout mt-4">
+                                        <div className="form-group checkout form-check">
+                                            <input
+                                                type="checkbox"
+                                                class="form-check-input"
+                                            />
+                                            <label className="form-check-label">
+                                                I've read and agree with Terms of Services and our Privacy Policy.
+                                            </label>
                                         </div>
-                                    </div> */}
-
-                                    <div className="row read-checkout mt-4">
-                                        <div className="col-7">
-                                            <div className="form-group checkout form-check">
-                                                <input
-                                                    type="checkbox"
-                                                    class="form-check-input"
-                                                />
-                                                <label className="form-check-label">
-                                                    I've read and agree with Terms of Services and our Privacy Policy.
-                                                </label>
-                                            </div>
-
-                                        </div>
-
-                                        <div className="col-5"></div>
                                     </div>
 
                                     <div className="signup-btn mt-5">
