@@ -10,7 +10,7 @@ function Slider() {
         <div className="container">
           <div className="row justify-content-center">
 
-              <div className="col-12 col-md-8 col-lg-8">
+              <div className="col-12 col-md-9 col-lg-9">
                   <div className="headings">
                       <h1>How Work Should Work</h1>
                       <p>Forget the old rules. You can have the best people. <br/> Right now. Right here.</p>

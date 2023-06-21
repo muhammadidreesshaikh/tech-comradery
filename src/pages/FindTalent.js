@@ -13,13 +13,13 @@ function FindTalent() {
       <div className="find-talent">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-5 col-lg-4">
+            <div className="col-12 col-lg-4">
               <div className="img-work">
                 <span className="verticaltxt">Expert</span>
                 <img src={require('./../assets/img/img-work.jpg')} />
               </div>
             </div>
-            <div className="col-12 col-md-7 col-lg-8 work_cntnt">
+            <div className="col-12 col-lg-8 work_cntnt">
               <h1>Up your work game, <span className="primary-color">it’s free.</span></h1>
               <p>
                 <span className="primary-color">No cost to join.</span><br />
@@ -50,7 +50,7 @@ function FindTalent() {
           <h1>Browse talent by <span>Category</span></h1>
           <h5>Looking for work? <span>Browse jobs</span></h5>
           <div className="row cate_row">
-            <div className="col-12 col-md-6 col-lg-3">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3">
               <div className="bx-category">
                 <h4>Development & IT</h4>
                 <div className="row">
@@ -59,7 +59,7 @@ function FindTalent() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-3">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3">
               <div className="bx-category">
                 <h4>Design & Creative</h4>
                 <div className="row">
@@ -68,7 +68,7 @@ function FindTalent() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-3">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3">
               <div className="bx-category">
                 <h4>Sales & Marketing</h4>
                 <div className="row">
@@ -77,7 +77,7 @@ function FindTalent() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-3">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3">
               <div className="bx-category">
                 <h4>Writing & Translation</h4>
                 <div className="row">
@@ -86,7 +86,7 @@ function FindTalent() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-3">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3">
               <div className="bx-category">
                 <h4>Admin & Customer Support</h4>
                 <div className="row">
@@ -95,7 +95,7 @@ function FindTalent() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-3">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3">
               <div className="bx-category">
                 <h4>Finance & Accounting</h4>
                 <div className="row">
@@ -104,7 +104,7 @@ function FindTalent() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-3">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3">
               <div className="bx-category">
                 <h4>Engineering & Architecture</h4>
                 <div className="row">
@@ -113,7 +113,7 @@ function FindTalent() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-3">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3">
               <div className="bx-category">
                 <h4>Legal</h4>
                 <div className="row">
@@ -130,7 +130,7 @@ function FindTalent() {
       <section className="sec-companygood">
         <div className="container">
           <div className="row">
-            <div className="col-md-8">
+            <div className="col-12 col-lg-8">
               <h1 className="main_hdng"><span className="primary-color title d-block">Enterprise Suite</span> This is how good companies find good company.</h1>
               <p>
                 Register and browse professionals, explore projects, or even book a consultation.
@@ -144,7 +144,7 @@ function FindTalent() {
                 <li><img src={require('./../assets/img/icon-headph.png')} /><span className="txt">Partner with Tech Comradery for end-to-end support</span></li>
               </ul>
             </div>
-            <div className="col-md-4">
+            <div className="col-12 col-lg-4">
               <div className="img-work">
                 <img src={require('./../assets/img/img-company.jpg')} />
               </div>
@@ -196,12 +196,12 @@ function FindTalent() {
       <section className="sec-worktalent">
         <div className="container">
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-12 col-lg-4">
               <div className="img-work">
                 <img src={require('./../assets/img/img-work2.jpg')} />
               </div>
             </div>
-            <div className="col-md-8 work_cntnt">
+            <div className="col-12 col-lg-8 work_cntnt">
               <h1 className="main_hdng"><span className="primary-color title d-block">For Talent</span> Find Great Work</h1>
               <p>
                 Meet clients you’re excited to work with and take your career or business to new heights.

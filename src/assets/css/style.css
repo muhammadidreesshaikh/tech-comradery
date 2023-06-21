@@ -64,31 +64,6 @@ span.primary-color {
     margin-right: 15px;
 }
 
-/* .btn-cstm.green,
-.btn-cstm.white:hover {
-    background-color: var(--color-green);
-    color: var(--color-white);
-    ;
-    border: 1px solid var(--color-green);
-}
-
-.btn.btn-cstm {
-    border-radius: 8px;
-    padding: 15px 30px;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.btn-cstm.white {
-    border: 1px solid var(--color-green);
-    color: var(--color-green);
-}
-
-.find-talent .btn {
-    margin-top: 50px;
-    margin-right: 20px;
-} */
-
 .work_cntnt {
     padding-top: 50px;
     padding-left: 50px !important;
@@ -136,38 +111,22 @@ span.primary-color {
     color: var(--color-green);
 }
 
-/* h1.main_hdng .normal {
-    font-weight: 300;
+.sec-category .cate_row {
+    margin-top: 30px;
 }
 
-.sec-category h1.main_hdng {
-    margin-bottom: 20px !important;
-}
-
-.sec-category h5.hdng_title {
-    margin-bottom: 40px !important;
-} */
-
-/* .cate_row {
-    margin: 0 -25px;
-} */
-
-/* .cate_row>div {
-    padding: 0 25px;
-} */
-
-.bx-category {
+.sec-category .bx-category {
     background-color: var(--color-white);
     border-radius: 10px;
     color: var(--color-green);
     padding: 30px;
-    margin-top: 50px;
+    margin-top: 1.5rem;
     text-align: left;
     font-size: 24px;
     transition: 0.5s;
 }
 
-.bx-category h4 {
+.sec-category .bx-category h4 {
     font-size: 22px;
     font-weight: 600;
     min-height: 70px;
@@ -379,26 +338,29 @@ ul.ul_company li {
 
 
 /* menu desktop and mobile switching on responsive  */
-@media only screen and (max-width: 768px) {
+@media (max-width: 991px) {
+
     /* find-talent */
     .find-talent h1 {
         font-size: 31px;
     }
 
     .img-work {
-        width: calc(80% - 15px);
-        height: calc(75% - 15px);
+        width: calc(100% - 80px);
+        height: auto;
+        display: block;
+        margin: 0 auto 15px;
     }
 
     .img-work .verticaltxt {
         font-size: 80px;
         top: 40%;
         left: -150px;
+        display: none;
     }
 
     .work_cntnt {
-        padding-top: 0px;
-        padding-left: 30px !important;
+        padding: 20px 20px 0px 20px !important;
     }
 
     .find-talent p {
@@ -421,27 +383,31 @@ ul.ul_company li {
         padding: 40px 0;
     }
 
+    .sec-category .cate_row{
+        margin-top: 30px;
+    }
+
     /* sec-companygood */
     .sec-companygood {
         padding: 40px 0;
     }
 
     /* sec-talent */
-    .sec-talent{
+    .sec-talent {
         padding: 40px 0;
     }
 
-    .bx-talent{
+    .bx-talent {
         margin-top: 20px;
     }
 
     /* sec-worktalent */
-    .sec-worktalent{
+    .sec-worktalent {
         padding: 40px 0;
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 767px) {
     .find-talent h1 {
         font-size: 28px;
     }
@@ -482,10 +448,6 @@ ul.ul_company li {
     /* .sec-category */
     .sec-category h1 {
         font-size: 32px;
-    }
-
-    .bx-category {
-        margin: 15px 0 0 0;
     }
 
     .bx-category h4 {
@@ -560,18 +522,15 @@ ul.ul_company li {
 
     /* sec-tabs */
     .sec-tabs {
-        padding: 16px 0;
+        padding: 20px 0 45px 0;
     }
 
     .sec-tabs .tab .inner {
-        margin: 25px 0;
-        text-align: center;
+        margin-top: 25px;
     }
 
     .sec-tabs .tab .seprator {
-        width: 50%;
-        display: block;
-        margin: auto;
+        margin-top: 4px;
     }
 
     .sec-tabs-content {
