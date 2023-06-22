@@ -13,7 +13,7 @@ function Login() {
                 <div className="container">
                     <div className="row justify-content-center">
 
-                        <div className='col-12 col-md-9 col-lg-5'>
+                        <div className='col-12 col-md-9 col-lg-7 col-xl-5'>
                             <div className='inner'>
                                 <h3>Login</h3>
                                 <p>Inspirational designs, illustrations, and graphic elements from the world’s best designers. Want more inspiration? Browse our</p>

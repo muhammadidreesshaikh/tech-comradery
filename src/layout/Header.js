@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import '../assets/scss/header.scss';
 
-import logo from '../assets/img/TC_Logo_white_BG.png';
+import logo from '../assets/img/MicrosoftTeams-image (27).png';
 import logo1 from '../assets/img/TC_Logo_black_bg2.png';
 
 function Header() {

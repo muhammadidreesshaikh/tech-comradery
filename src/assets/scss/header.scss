@@ -1,15 +1,18 @@
 .header {
     background-color: var(--color-white);
-    padding: 25px 0;
+    padding: 10px 0;
     width: 100%;
-    height: 100px;
+    height: 80px;
     position: relative;
     display: flex;
     align-items: center;
 
     .logo {
         img {
-            width: 150px;
+            width: 120px;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
         }
     }
 
@@ -327,7 +330,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .header {
         padding: 20px 0;
 
@@ -381,7 +384,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
     .header {
         .desktop-menu {
 

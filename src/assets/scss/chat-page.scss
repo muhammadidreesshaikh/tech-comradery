@@ -1,19 +1,40 @@
 .chat-bot {
-    // padding: 60px 0;
+    height: calc(100vh - 80px);
     background-color: #fbfbfb;
-    position: relative;
 
     .side-bar {
         background-color: var(--color-black);
-        width: 20%;
-        height: 85vh;
-        position: absolute;
-        left: 0px;
+        width: 50px;
+        height: 100%;
+        float: left;
+        position: relative;
+        transition: 0.5s;
+
+        &.active {
+            width: 300px;
+        }
+
+        .toggle-side-menu {
+            a {
+                i {
+                    color: var(--color-white);
+                    position: absolute;
+                    right: -20px;
+                    top: 50%;
+                    background-color: var(--color-green);
+                    padding: 10px 5px;
+                    border-radius: 3px;
+                    font-size: 13px;
+                    z-index: 1;
+                    cursor: pointer;
+                }
+            }
+        }
 
         .form-group-custm {
             input {
                 width: 85%;
-                height: 50px;
+                height: 45px;
                 cursor: pointer;
                 position: absolute;
                 top: 30px;
@@ -23,7 +44,8 @@
                 background-color: transparent;
                 color: var(--color-light-gry);
                 border: 1px solid var(--color-light-gry);
-                &::placeholder{
+
+                &::placeholder {
                     color: var(--color-light-gry);
                 }
             }
@@ -32,7 +54,7 @@
                 position: absolute;
                 left: 35px;
                 top: 43px;
-                color: var(--color-light-gry);;
+                color: var(--color-light-gry);
                 font-size: 17px;
                 cursor: pointer;
 
@@ -45,9 +67,11 @@
         }
 
         ul {
+            // left: 30px;
+            // bottom: 25px;
             position: absolute;
-            left: 30px;
-            bottom: 25px;
+            left: 15px;
+            bottom: 20px;
             list-style: none;
             margin-bottom: 0;
             padding-left: 0;
@@ -57,11 +81,11 @@
 
                 a {
                     color: var(--color-white);
-                    font-size: 19px;
+                    font-size: 15px;
 
                     i {
                         color: var(--color-green);
-                        font-size: 17px;
+                        font-size: 16px;
                         padding-right: 15px;
                     }
 
@@ -76,46 +100,51 @@
     }
 
     .main {
-        width: 100%;
-        height: 85vh;
-        padding: 50px 0;
+        width: calc(100% - 300px);
+        height: calc(100vh - 100px);
+        display: inline-block;
 
-        h3 {
-            text-align: center;
-            font-size: 50px;
-            color: var(--color-black);
-            font-weight: 600;
-        }
+        .heading-chatbot {
+            height: calc(100vh - 144px);
+            padding: 25px;
 
-        p {
-            text-align: center;
-            font-size: 16px;
-            color: #939393;
-            padding: 15px 15px 0 15px;
-        }
-
-        .form-group {
-
-            input {
-                width: 100%;
-                height: 45px;
-                cursor: pointer;
-                position: absolute;
-                top: 22rem;
+            h3 {
+                text-align: center;
+                font-size: 45px;
+                color: var(--color-black);
+                font-weight: 600;
             }
 
-            a {
-                position: absolute;
-                right: 1.25rem;
-                top: 22.438rem;
-                color: var(--color-black);
-                font-size: 20px;
-                cursor: pointer;
+            p {
+                text-align: center;
+                font-size: 14px;
+                color: #939393;
+                padding: 15px 15px 0 15px;
+            }
+        }
 
-                &:hover {
-                    color: var(--color-green);
-                    transition: 0.5s;
-                    opacity: 0.5s;
+        .cstm-chat-bar {
+            padding: 10px 20px;
+            border-top: 1px solid #dcdcdc;
+
+            .form-group {
+                &.msg-send {
+                    input {}
+
+                    a {
+                        background-color: var(--color-green);
+                        color: var(--color-white);
+                        padding: 7px 11px;
+                        border-radius: 5px;
+                        margin-left: 5px;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: var(--color-black);
+                            transition: 0.5s;
+                            opacity: 0.5s;
+                        }
+                    }
                 }
             }
         }
