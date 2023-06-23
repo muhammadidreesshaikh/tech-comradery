@@ -7,7 +7,10 @@ import '../assets/scss/chat-page.scss';
 
 function ChatBot() {
 
-    const [toggleSideMenu, setToggleSideMenu] = useState(true);
+    // const [toggleSideMenu, setToggleSideMenu] = useState(true);
+    const [toggleSideMenu, setToggleSideMenu] = useState(
+        (window.innerWidth <= 992) ? false : true
+    );
 
     return (
         <div>
