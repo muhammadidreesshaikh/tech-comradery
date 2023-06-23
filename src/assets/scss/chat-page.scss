@@ -104,6 +104,10 @@
         height: calc(100vh - 100px);
         display: inline-block;
 
+        &.active{
+            width: 96%;
+        }
+
         .heading-chatbot {
             height: calc(100vh - 144px);
             padding: 25px;

@@ -7,7 +7,7 @@ import '../assets/scss/chat-page.scss';
 
 function ChatBot() {
 
-    const [toggleSideMenu, setToggleSideMenu] = useState(false);
+    const [toggleSideMenu, setToggleSideMenu] = useState(true);
 
     return (
         <div>
@@ -21,19 +21,24 @@ function ChatBot() {
                     </div>
 
                     <form className="mt-2">
-                        <div className="form-group-custm">
-                            <input
-                                type="email"
-                                class="form-control"
-                                placeholder='New chat'
-                            />
-                            <a><i class="fa-solid fa-plus"></i></a>
-                        </div>
+                        {
+                            toggleSideMenu ?
+                            <div className="form-group-custm">
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    placeholder='New chat'
+                                />
+                                <a><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                            :
+                            <a className='side-chat-input'><i class="fa-solid fa-plus"></i></a>
+                        }
                     </form>
 
                     <ul>
                         <li>
-                            <a href='#'>
+                            <a href='#' data-toggle="tooltip" data-placement="right" title="Upgrade to Plus">
                                 <i class="fa-regular fa-user"></i>
                                 {toggleSideMenu ? 'Upgrade to Plus' : ''}
                             </a>
@@ -66,7 +71,7 @@ function ChatBot() {
                     </ul>
                 </div>
 
-                <div className='main'>
+                <div className={"main " + (toggleSideMenu ? '' : 'active')}>
                     <div className='heading-chatbot'>
                         <h3>Chat Bot</h3>
                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
