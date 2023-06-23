@@ -23,49 +23,48 @@ function ChatBot() {
                     <form className="mt-2">
                         {
                             toggleSideMenu ?
-                            <div className="form-group-custm">
-                                <input
-                                    type="email"
-                                    class="form-control"
-                                    placeholder='New chat'
-                                />
-                                <a><i class="fa-solid fa-plus"></i></a>
-                            </div>
-                            :
-                            <a className='side-chat-input'><i class="fa-solid fa-plus"></i></a>
+                                <div className="form-group-custm">
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        placeholder='New Chat'
+                                    />
+                                    <a><i class="fa-solid fa-plus"></i></a>
+                                </div>
+                                :
+                                <a onClick={() => setToggleSideMenu(!toggleSideMenu)} className='side-chat-input'><i class="fa-solid fa-plus"></i></a>
                         }
                     </form>
 
                     <ul>
                         <li>
-                            <a href='#' data-toggle="tooltip" data-placement="right" title="Upgrade to Plus">
+                            <a href='#' data-bs-toggle="tooltip" data-placement="right" title="Upgrade to Plus">
                                 <i class="fa-regular fa-user"></i>
-                                {toggleSideMenu ? 'Upgrade to Plus' : ''}
+                                <span className='menu-text'>Upgrade to Plus</span>
                             </a>
                         </li>
                         <li>
                             <a href='#'>
                                 <i class="fa-regular fa-moon"></i>
-                                {toggleSideMenu ? 'Dark mode' : ''}
+                                <span className='menu-text'>Dark mode</span>
                             </a>
                         </li>
                         <li>
                             <a href='#'>
                                 <i class="fa-solid fa-up-right-from-square"></i>
-                                {toggleSideMenu ? 'Updates & FAQ' : ''}
+                                <span className='menu-text'>Updates & FAQ</span>
                             </a>
                         </li>
                         <li>
                             <a href='#'>
                                 <i class="fa-solid fa-gear"></i>
-                                {toggleSideMenu ? 'Setting' : ''}
+                                <span className='menu-text'>Setting</span>
                             </a>
                         </li>
                         <li>
                             <a href='#'>
                                 <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                                {toggleSideMenu ? ' Log out' : ''}
-
+                                <span className='menu-text'>Log out</span>
                             </a>
                         </li>
                     </ul>

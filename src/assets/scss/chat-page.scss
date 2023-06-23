@@ -19,11 +19,11 @@
                 i {
                     color: var(--color-white);
                     position: absolute;
-                    right: -20px;
-                    top: 50%;
-                    background-color: var(--color-green);
-                    padding: 10px 5px;
-                    border-radius: 3px;
+                    right: -15px;
+                    top: 45%;
+                    background-color: rgba(127, 127, 127, 0.4705882353);
+                    padding: 15px 4px;
+                    border-radius: 2px;
                     font-size: 13px;
                     z-index: 1;
                     cursor: pointer;
@@ -34,12 +34,12 @@
         .form-group-custm {
             input {
                 width: 85%;
-                height: 45px;
+                height: 40px;
                 cursor: pointer;
                 position: absolute;
                 top: 30px;
                 left: 20px;
-                font-size: 19px;
+                font-size: 16px;
                 padding-left: 50px;
                 background-color: transparent;
                 color: var(--color-light-gry);
@@ -53,9 +53,9 @@
             a {
                 position: absolute;
                 left: 35px;
-                top: 43px;
+                top: 39px;
                 color: var(--color-light-gry);
-                font-size: 17px;
+                font-size: 16px;
                 cursor: pointer;
 
                 &:hover {
@@ -66,9 +66,16 @@
             }
         }
 
+        a {
+            &.side-chat-input {
+                color: white;
+                padding: 0 15px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+
         ul {
-            // left: 30px;
-            // bottom: 25px;
             position: absolute;
             left: 15px;
             bottom: 20px;
@@ -77,11 +84,14 @@
             padding-left: 0;
 
             li {
-                padding-top: 20px;
+                // padding-top: 20px;
 
                 a {
                     color: var(--color-white);
                     font-size: 15px;
+                    position: relative;
+                    padding: 10px 0;
+                    display: block;
 
                     i {
                         color: var(--color-green);
@@ -90,7 +100,7 @@
                     }
 
                     &:hover {
-                        color: var(--color-green);
+                        color: var(--color-white);
                         transition: 0.5s;
                         opacity: 0.5s;
                     }
@@ -104,8 +114,9 @@
         height: calc(100vh - 100px);
         display: inline-block;
 
-        &.active{
-            width: 96%;
+        &.active {
+            // width: 96%;
+            width: calc(100% - 50px);
         }
 
         .heading-chatbot {
@@ -155,3 +166,27 @@
     }
 
 }
+
+.chat-bot .side-bar ul li a span.menu-text {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #000;
+    padding: 10px;
+    white-space: nowrap;
+    display: none;
+    border-radius: 4px;
+}
+
+.chat-bot .side-bar ul li a:hover span.menu-text {
+    display: block;
+}
+
+.chat-bot .side-bar.active ul li a span.menu-text {
+    display: inline-block;
+    position: inherit;
+    padding: 0;
+    left: inherit;
+    transition: 0.5s;
+}
+
